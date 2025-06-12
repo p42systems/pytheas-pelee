@@ -1,0 +1,15 @@
+{
+  "id": "p7poi",
+  "url": [
+    {
+      "path": "p7poi.jpg",
+      "type": "image",
+      "imageAlt": "point point of interest"
+    }
+  ],
+  "description": [
+    "The Waterfront Promenade, part of Leamington's waterfront amenities, is a scenic walkway that stretches along the shores of Lake Erie. It features beautiful views of the lake, landscaped gardens, and seating areas for relaxation. The promenade is ideal for walking, jogging, and enjoying the natural beauty of the waterfront.",
+    "Photo by Sue Thompson via Flickr, licensed under CC BY-ND 2.0."
+  ],
+  "image": "p7poi.jpg"
+}

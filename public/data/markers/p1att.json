@@ -1,0 +1,17 @@
+{
+  "id": "p1att",
+  "url": [
+    {
+      "path": "p1att.jpg",  
+      "type": "image",
+      "imageAlt": "Kopegaron Woods"
+    }
+  ],
+  "description": [
+    "Kopegaron Woods conservation area is a 19-hectare Carolinian woodland. It features boardwalk trails that provide opportunities for birdwatching and wildlife observation. The area is home to a variety of flora and fauna, making it a great spot for nature enthusiasts.",
+    "The Woods is one of Ontario's 300 conservation areas, built and maintained in an effort to preserve natural habitats and promote biodiversity. Visitors can enjoy the serene environment while learning about the local ecosystem.",
+    "Parking and admission are free.",
+    "Photo by Howard Walsh via Flickr, public domain."
+  ],
+  "image": "p1att.jpg"
+}

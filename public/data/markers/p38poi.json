@@ -1,0 +1,15 @@
+{
+  "id": "p38poi",
+  "url": [
+    {
+      "path": "p38poi.jpg",
+      "type": "image",
+      "imageAlt": "Camp Henry"
+    }
+  ],
+  "description": [
+    "Camp Henry is the location of 24 oTENTik cabins, available for rent year-round. Camp Henry includes a number of amenities including a store, a play area, washrooms and showers.",
+    "Photo is courtesy of the Government of Canada. Find the original at https://parks.canada.ca/pn-np/on/pelee/activ/otentik"
+  ],
+  "image": "p38poi.jpg"
+}

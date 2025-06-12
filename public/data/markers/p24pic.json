@@ -1,0 +1,15 @@
+{
+  "id": "p24pic",
+  "url": [
+    {
+      "path": "p24pic.jpg",
+      "type": "image",
+      "imageAlt": "picnic_site point of interest"
+    }
+  ],
+  "description": [
+    "This location is designated as a picnic site on OpenStreetMap.",
+    "Photo is \"Aquilegia Canadensis\" by Mykola Swarnyk on Wikimedia Commons, licensed under CC BY-SA 4.0."
+  ],
+  "image": "p24pic.jpg"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "p5park",
+  "url": [
+    {
+      "path": "p5park.jpg",
+      "type": "image",
+      "imageAlt": "Seacliffe Park"
+    }
+  ],
+  "description": [
+    "Seacliffe Park, located on the shores of Lake Erie, is a popular recreation area with a variety of amenities for visitors.",
+    "The park includes a public beach, a playground, picnic areas, and a water play area.",
+    "Photo by Andrea_44 via Flickr, licensed under CC BY 2.0."
+  ],
+  "image": "p5park.jpg"
+}

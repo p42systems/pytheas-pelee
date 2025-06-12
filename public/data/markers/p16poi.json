@@ -1,0 +1,23 @@
+{
+  "id": "p16poi",
+  "url": [
+    {
+      "path": "p16poi.jpg",
+      "type": "image",
+      "imageAlt": "Mash Boardwalk / Pelee Wings at the Marsh"
+    },
+    {
+      "path": "p16poi-1.pjg",
+      "type": "image",
+      "imageAlt": "Family Dinner by Nikkiband"
+    }
+  ],
+  "description": [
+    "The Marsh boardwalk is a scenic walkway that allows visitors to explore the marshland ecosystem. It features interpretive signs about local biodiversity.",
+    "Pelee Wings at the Marsh offers a limited selection of gift shop items along with bike, canoe and kayak rentals. Inquire here about guided birding tours.",
+    "Photos:",
+    "\"Marsh Boardwalk and Canoe by Jason Zhang via Wikipedia Commons, licensed under CC BY-SA 4.0. It shows the boardwalk winding through the marsh.",
+    "\"Family Dinner\" by Nikkiband via Wikipedia Commons, licensed under CC BY-SA 3.0. It depicts a family of Black Terns."
+  ],
+  "image": "p16poi.jpg"
+}

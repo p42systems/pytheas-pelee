@@ -1,0 +1,16 @@
+{
+  "id": "p8poi",
+  "url": [
+    {
+      "path": "p8poi.jpg",
+      "type": "image",
+      "imageAlt": "Leamington Municipal Marina"
+    }
+  ],
+  "description": [
+    "The Leamington Municipal Marina is a working marina with amenities for boaters and visitors. It features boat slips, fuel services, and a launch ramp.",
+    "The Lakeside Patio Restaurant, located at the marina, offers a scenic dining experience with views of the water.",
+    "Photo by Andrea_44 via Flickr, licensed under CC BY 2.0."
+  ],
+  "image": "p8poi.jpg"
+}

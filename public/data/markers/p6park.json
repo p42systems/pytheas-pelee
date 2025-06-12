@@ -1,0 +1,16 @@
+{
+  "id": "p6park",
+  "url": [
+    {
+      "path": "p6park.jpg",
+      "type": "image",
+      "imageAlt": "Rick Atkin Park"
+    }
+  ],
+  "description": [
+    "Rick Atkin Park is a community park located along Robson Road adjacent to the Leamington Marina and Waterfront promenade.",
+    "Renewed with a new playground for 2025, the park is a charished local recreation space.",
+    "Photo by Andrea_44 via Wikimedia Commons, licensed under CC BY 2.0."
+  ],
+  "image": "p6park.jpg"
+}
