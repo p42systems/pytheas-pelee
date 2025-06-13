@@ -22,13 +22,12 @@
         "latitude": 42.0257286,
         "sequence": 75,
         "imageAlt": "Leamington Municipal Marina",
-        "extra": "False",
+        "extra": false,
         "id": "p8poi",
         "image": "p8poi.jpg",
         "address": "",
         "name": "Leamington Municipal Marina"
-      },
-      "id": 0
+      }
     },
     {
       "type": "Feature",
@@ -44,13 +43,12 @@
         "latitude": 42.0084,
         "sequence": 80,
         "imageAlt": "Mersea Park",
-        "extra": "False",
+        "extra": false,
         "id": "p9park",
         "image": "p9park.jpg",  
         "address": "Robson Rd 101",
         "name": "Mersea Park"
-      },
-      "id": 1
+      }
     },
     {
       "type": "Feature",
@@ -66,13 +64,12 @@
         "latitude": 42.0275065,
         "sequence": 60,
         "imageAlt": "Rick Atkin Park",
-        "extra": "False",
+        "extra": false,
         "id": "p6park",
         "image": "p6park.jpg",
         "address": "Robson Rd 101",
         "name": "Rick Atkin Park"
-      },
-      "id": 2
+      }
     },
     {
       "type": "Feature",
@@ -88,13 +85,12 @@
         "latitude": 42.0332595,
         "sequence": 50,
         "imageAlt": "Seacliffe Park",
-        "extra": "False",
+        "extra": false,
         "id": "p5park",
         "image": "p5park.jpg",
         "address": "Park Ln W 12",
         "name": "Seacliffe Park"
-      },
-      "id": 3
+      }
     },
     {
       "type": "Feature",
@@ -110,13 +106,12 @@
         "latitude": 41.96753,
         "sequence": 160,
         "imageAlt": "Marsh Boardwalk / Pelee Wings at the Marsh",
-        "extra": "False",
+        "extra": false,
         "id": "p16poi",
         "image": "p16poi.jpg",
         "address": "Point Pelee Drive 1378",
         "name": "Pelee Wings at the Marsh"
-      },
-      "id": 4
+      }
     },
     {
       "type": "Feature",
@@ -132,13 +127,12 @@
         "latitude": 42.0278141,
         "sequence": 70,
         "imageAlt": "point point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p7poi",
         "image": "p7poi.jpg",
         "address": "Robson Road 96;110",
         "name": "Waterfront Promenade"
-      },
-      "id": 5
+      }
     },
     {
       "type": "Feature",
@@ -154,13 +148,12 @@
         "latitude": 41.948177,
         "sequence": 190,
         "imageAlt": "DeLaurier Homestead",
-        "extra": "False",
+        "extra": false,
         "id": "p19att",
         "image": "p19att.jpg",
         "address": "",
         "name": "DeLaurier Homestead"
-      },
-      "id": 6
+      }
     },
     {
       "type": "Feature",
@@ -176,13 +169,12 @@
         "latitude": 41.951419,
         "sequence": 220,
         "imageAlt": "viewpoint point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p22vie",
         "image": "p22vie.jpg",
         "address": "",
         "name": "Boardwalk Viewpoint"
-      },
-      "id": 7
+      }
     },
     {
       "type": "Feature",
@@ -198,13 +190,12 @@
         "latitude": 41.939861,
         "sequence": 240,
         "imageAlt": "picnic_site point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p24pic",
         "image": "p24pic.jpg",
         "address": "",
         "name": "Picnic Site"
-      },
-      "id": 8
+      }
     },
     {
       "type": "Feature",
@@ -220,13 +211,12 @@
         "latitude": 41.949087,
         "sequence": 200,
         "imageAlt": "picnic_site point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p20pic",
         "image": "p20pic.jpg",
         "address": "",
         "name": "Picnic Site"
-      },
-      "id": 9
+      }
     },
     {
       "type": "Feature",
@@ -242,13 +232,12 @@
         "latitude": 41.953666,
         "sequence": 180,
         "imageAlt": "Sleepy Hollow",
-        "extra": "False",
+        "extra": false,
         "id": "p18pic",
         "image": "p18pic.jpg",
         "address": "Point Pelee Drive 1533",
         "name": "Sleepy Hollow"
-      },
-      "id": 10
+      }
     },
     {
       "type": "Feature",
@@ -264,13 +253,12 @@
         "latitude": 41.955843,
         "sequence": 170,
         "imageAlt": "Dunes",
-        "extra": "False",
+        "extra": false,
         "id": "p17pic",
         "image": "p17pic.jpg",
         "address": "Point Pelee Drive 1513",
         "name": "Dunes"
-      },
-      "id": 11
+      }
     },
     {
       "type": "Feature",
@@ -286,13 +274,12 @@
         "latitude": 41.968249,
         "sequence": 140,
         "imageAlt": "Marsh Tower",
-        "extra": "False",
+        "extra": false,
         "id": "p14vie",
         "image": "p14vie.jpg",
         "address": "",
         "name": "Marsh Tower"
-      },
-      "id": 12
+      }
     },
     {
       "type": "Feature",
@@ -308,13 +295,12 @@
         "latitude": 41.968379,
         "sequence": 130,
         "imageAlt": "picnic_site point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p13pic",
         "image": "p13pic.jpg",
         "address": "",
         "name": "Picnic Site"
-      },
-      "id": 13
+      }
     },
     {
       "type": "Feature",
@@ -331,13 +317,12 @@
         "latitude": "42.0432",
         "sequence": "90.0",
         "imageAlt": "picnic_site point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p10pic",
         "image": "p10pic.jpg",
         "address": "",
         "name": "Picnic Site"
-      },
-      "id": 15
+      }
     },
     {
       "type": "Feature",
@@ -353,13 +338,12 @@
         "latitude": 42.05247,
         "sequence": 30,
         "imageAlt": "museum point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p3mus",
         "image": "p3mus.jpg",
         "address": "Talbot Street West 72",
         "name": "Leamington Arts Centre"
-      },
-      "id": 16
+      }
     },
     {
       "type": "Feature",
@@ -375,13 +359,12 @@
         "latitude": 42.043801,
         "sequence": 40,
         "imageAlt": "Essex Kent Mennonite Historical Society",
-        "extra": "False",
+        "extra": false,
         "id": "p4mus",
         "image": "p4mus.jpg",
         "address": "",
         "name": "Essex Kent Mennonite Historical Society"
-      },
-      "id": 17
+      }
     },
     {
       "type": "Feature",
@@ -397,13 +380,12 @@
         "latitude": 42.06283,
         "sequence": 20,
         "imageAlt": "Thiessen Orchards",
-        "extra": "False",
+        "extra": false,
         "id": "p2att",
         "image": "p2att.jpg",
         "address": "Talbot Road East 400",
         "name": "Thiessen Orchards"
-      },
-      "id": 18
+      }
     },
     {
       "type": "Feature",
@@ -419,13 +401,12 @@
         "latitude": 41.94065,
         "sequence": 230,
         "imageAlt": "White Pine",
-        "extra": "False",
+        "extra": false,
         "id": "p23pic",
         "image": "p23pic.jpg",
         "address": "",
         "name": "White Pine"
-      },
-      "id": 19
+      }
     },
     {
       "type": "Feature",
@@ -441,13 +422,12 @@
         "latitude": 41.982854,
         "sequence": 100,
         "imageAlt": "Park Orientation",
-        "extra": "False",
+        "extra": false,
         "id": "p10inf",
         "image": "p10inf.jpg",
         "address": "",
         "name": "Park Orientation"
-      },
-      "id": 20
+      }
     },
     {
       "type": "Feature",
@@ -463,13 +443,12 @@
         "latitude": 41.981614,
         "sequence": 110,
         "imageAlt": "viewpoint point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p11vie",
         "image": "p11vie.jpg",
         "address": "",
         "name": "Viewpoint"
-      },
-      "id": 21
+      }
     },
     {
       "type": "Feature",
@@ -485,13 +464,12 @@
         "latitude": 41.974007,
         "sequence": 120,
         "imageAlt": "Sanctuary",
-        "extra": "False",
+        "extra": false,
         "id": "p12att",
         "image": "p12att.jpg",
         "address": "",
         "name": "Sanctuary"
-      },
-      "id": 22
+      }
     },
     {
       "type": "Feature",
@@ -507,13 +485,12 @@
         "latitude": 41.949899,
         "sequence": 210,
         "imageAlt": "viewpoint point of interest",
-        "extra": "False",
+        "extra": false,
         "id": "p21vie",
         "image": "p21vie.jpg",
         "address": "",
         "name": "Viewpoint"
-      },
-      "id": 23
+      }
     },
     {
       "type": "Feature",
@@ -529,13 +506,12 @@
         "latitude": 42.079089,
         "sequence": 10,
         "imageAlt": "Kopegaron Woods",
-        "extra": "False",
+        "extra": false,
         "id": "p1att",
         "image": "p1att.jpg",
         "address": "",
         "name": "Kopegaron Woods"
-      },
-      "id": 48
+      }
     },
     {
       "type": "Feature",
@@ -544,7 +520,7 @@
         "longitude": -82.513,
         "sequence": 500,
         "imageAlt": "Visitor Centre",
-        "extra": "False",
+        "extra": false,
         "id": "p50poi",
         "image": "p50poi.jpg",
         "address": "",
@@ -556,8 +532,7 @@
           41.9316318129286
         ],
         "type": "Point"
-      },
-      "id": 25
+      }
     },
     {
       "type": "Feature",
@@ -566,7 +541,7 @@
         "longitude": -82.51006622788641,
         "sequence": 510,
         "imageAlt": "Tip Tower",
-        "extra": "False",
+        "extra": false,
         "id": "p51poi",
         "image": "p51poi.jpg",
         "address": "",
@@ -587,7 +562,7 @@
         "longitude": -82.50908417382072,
         "sequence": 540,
         "imageAlt": "East Point Beach",
-        "extra": "False",
+        "extra": false,
         "id": "p54poi",
         "image": "p54poi.jpg",
         "address": "",
@@ -599,8 +574,7 @@
           41.91037911429646
         ],
         "type": "Point"
-      },
-      "id": 53
+      }
     },
     {
       "type": "Feature",
@@ -609,7 +583,7 @@
         "longitude": -82.50938012697509,
         "sequence": 550,
         "imageAlt": "Point Pelee",
-        "extra": "False",
+        "extra": false,
         "id": "p55poi",
         "image": "p55poi.jpeg",
         "address": "",
@@ -621,8 +595,7 @@
           41.908862033615236
         ],
         "type": "Point"
-      },
-      "id": 54
+      }
     },
     {
       "type": "Feature",
@@ -631,7 +604,7 @@
         "longitude": -82.51445917549304,
         "sequence": 380,
         "imageAlt": "Camp Henry",
-        "extra": "False",
+        "extra": false,
         "id": "p38poi",
         "image": "p38poi.jpg",
         "address": "",
@@ -643,8 +616,7 @@
           41.93687077309801
         ],
         "type": "Point"
-      },
-      "id": 31
+      }
     },
     {
       "type": "Feature",
@@ -653,7 +625,7 @@
         "longitude": -82.53434611228644,
         "sequence": 165,
         "imageAlt": "Northwest Beach",
-        "extra": "False",
+        "extra": false,
         "id": "p56poi",
         "image": "p56poi.jpg",
         "address": "",
@@ -665,8 +637,7 @@
           41.96736409356657
         ],
         "type": "Point"
-      },
-      "id": 32
+      }
     },
     {
       "type": "Feature",
@@ -675,7 +646,7 @@
         "longitude": -82.50393743159621,
         "sequence": 167,
         "imageAlt": "East Beach",
-        "extra": "False",
+        "extra": false,
         "id": "p57poi",
         "image": "p57poi.jpg",
         "address": "",
@@ -696,7 +667,7 @@
         "longitude": -82.522400538034,
         "sequence": 195,
         "imageAlt": "Black Willow Beach",
-        "extra": "False",
+        "extra": false,
         "id": "p58poi",
         "image": "p58poi.jpg",
         "address": "",
@@ -708,8 +679,7 @@
           41.94617327346995
         ],
         "type": "Point"
-      },
-      "id": 34
+      }
     },
     {
       "type": "Feature",
@@ -718,7 +688,7 @@
         "longitude": -82.50554394251904,
         "sequence": 505,
         "imageAlt": "East Beach (South)",
-        "extra": "False",
+        "extra": false,
         "id": "p59poi",
         "image": "p59poi.jpg",
         "address": "",
@@ -730,8 +700,7 @@
           41.93506444376595
         ],
         "type": "Point"
-      },
-      "id": 35
+      }
     },
     {
       "type": "Feature",
@@ -740,7 +709,7 @@
         "longitude": -82.51595247085693,
         "sequence": 507,
         "imageAlt": "West Beach (South)",
-        "extra": "False",
+        "extra": false,
         "id": "p60poi",
         "image": "p60poi.jpg",
         "address": "",
@@ -752,17 +721,16 @@
           41.93140412467292
         ],
         "type": "Point"
-      },
-      "id": 36
+      }
     },
     {
       "type": "Feature",
       "properties": {
         "latitude": 41.94281569469527,
         "longitude": -82.51633407009638,
-        "sequence ": 195,
+        "sequence": 195,
         "imageAlt": "Point Pelee Cemetary",
-        "extra": "False",
+        "extra": false,
         "id": "p61poi",
         "image": "p61poi.jpg",
         "address": "",
@@ -774,8 +742,7 @@
           41.94281569469527
         ],
         "type": "Point"
-      },
-      "id": 37
+      }
     },
     {
       "type": "Feature",
@@ -784,7 +751,7 @@
         "longitude": -82.51369893689923,
         "sequence": 501,
         "imageAlt": "Tip Shuttle Stop",
-        "extra": "False",
+        "extra": false,
         "id": "p62poi",
         "image": "p62poi.jpg",
         "address": "",
@@ -796,8 +763,7 @@
           41.931614343393335
         ],
         "type": "Point"
-      },
-      "id": 38
+      }
     },
     {
       "type": "Feature",
@@ -806,7 +772,7 @@
         "longitude": -82.50946532492881,
         "sequence": 521,
         "imageAlt": "Tip Shuttle Stop",
-        "extra": "False",
+        "extra": false,
         "id": "p63poi",
         "image": "p63poi.jpg",
         "address": "",
@@ -818,8 +784,7 @@
           41.914153272117375
         ],
         "type": "Point"
-      },
-      "id": 39
+      }
     },
     {
       "type": "Feature",
@@ -828,7 +793,7 @@
         "longitude": -82.50931114676828,
         "sequence": 530,
         "imageAlt": "42 Sign",
-        "extra": "False",
+        "extra": false,
         "id": "p53poi",
         "image": "p53poi.jpg",
         "address": "",

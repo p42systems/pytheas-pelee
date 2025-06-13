@@ -66,7 +66,6 @@ export async function fetchMarkers(
   markers.order = Array.from(
     pre_order.sort((a, b) => a.sequence - b.sequence).map((value) => value.id)
   );
-
   return markers;
 }
 

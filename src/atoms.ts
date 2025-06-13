@@ -181,6 +181,7 @@ export const updateSelectedMarkerAtom = atom(
 export const selectedMarkerAtom = atom<IMarker | null>((get) => {
   const { markers } = get(markersQueryAtom);
   const selectedMarkerId = get(selectedMarkerIdAtom);
+
   return selectedMarkerId != null
     ? selectedMarkerId in markers
       ? markers[selectedMarkerId]
@@ -296,7 +297,6 @@ export const markersQueryAtom = atomWithQuery<
   queryKey: ["markers"],
   queryFn: async () => {
     const tourPreference = get(tourPreferenceAtom);
-
     return fetchMarkers(tourPreference);
   },
 }));

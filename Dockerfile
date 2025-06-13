@@ -9,3 +9,5 @@ RUN npm install \
     --registry=https://registry.npmjs.org/
 
 COPY . .
+
+CMD ["npm", "run", "dev"]

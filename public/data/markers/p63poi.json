@@ -2,7 +2,7 @@
   "id": "p63poi",
   "url": [
     {
-      "path": "",
+      "path": "/photos/p63poi.jpg",
       "type": "image",
       "imageAlt": "Tip Shuttle Stop"
     }
@@ -10,5 +10,5 @@
   "description": [
      "This stop is the destination point for the Tip Shuttle, which takes visitors to the southernmost point of mainland Canada. The suttle runs seasonally from mid-April through October, and provides a convenient way to explore this unique area."
   ],
-  "image": ""
+  "image": "p63poi.jpg"
 }
