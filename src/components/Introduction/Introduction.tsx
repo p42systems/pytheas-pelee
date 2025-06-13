@@ -6,8 +6,6 @@ import Footer from "../General/Footer";
 import TourInstructionsIntro from "./components/TourInstructionsIntro";
 import IntroNav from "./components/IntroNav";
 import About from "./components/About";
-import Statement from "./components/Statement";
-import References from "./components/References";
 
 import { MainContainer, BackButton } from "../styled_components";
 
@@ -17,8 +15,6 @@ function Introduction() {
   const [, setLocation] = useLocation();
   const howToRef = useRef<HTMLHeadingElement>(null);
   const aboutRef = useRef<HTMLHeadingElement>(null);
-  const statementRef = useRef<HTMLHeadingElement>(null);
-  const referencesRef = useRef<HTMLHeadingElement>(null);
 
   return (
     <>
@@ -38,13 +34,9 @@ function Introduction() {
           <IntroNav
             howToRef={howToRef}
             aboutRef={aboutRef}
-            statementRef={statementRef}
-            referencesRef={referencesRef}
           />
           <TourInstructionsIntro howToRef={howToRef} />
           <About aboutRef={aboutRef} />
-          <Statement statementRef={statementRef} />
-          <References referencesRef={referencesRef} />
         </article>
       </MainContainer>
       <Footer />

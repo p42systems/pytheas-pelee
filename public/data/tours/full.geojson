@@ -24,7 +24,7 @@
         "imageAlt": "Leamington Municipal Marina",
         "extra": false,
         "id": "p8poi",
-        "image": "p8poi.jpg",
+        "image": "/photos/p8poi.jpg",
         "address": "",
         "name": "Leamington Municipal Marina"
       }
@@ -45,7 +45,7 @@
         "imageAlt": "Mersea Park",
         "extra": false,
         "id": "p9park",
-        "image": "p9park.jpg",  
+        "image": "/photos/p9park.jpg",  
         "address": "Robson Rd 101",
         "name": "Mersea Park"
       }
@@ -66,7 +66,7 @@
         "imageAlt": "Rick Atkin Park",
         "extra": false,
         "id": "p6park",
-        "image": "p6park.jpg",
+        "image": "/photos/p6park.jpg",
         "address": "Robson Rd 101",
         "name": "Rick Atkin Park"
       }
@@ -87,7 +87,7 @@
         "imageAlt": "Seacliffe Park",
         "extra": false,
         "id": "p5park",
-        "image": "p5park.jpg",
+        "image": "/photos/p5park.jpg",
         "address": "Park Ln W 12",
         "name": "Seacliffe Park"
       }
@@ -108,9 +108,9 @@
         "imageAlt": "Marsh Boardwalk / Pelee Wings at the Marsh",
         "extra": false,
         "id": "p16poi",
-        "image": "p16poi.jpg",
+        "image": "/photos/p16poi.jpg",
         "address": "Point Pelee Drive 1378",
-        "name": "Pelee Wings at the Marsh"
+        "name": "Marsh Boardwalk / Pelee Wings at the Marsh"
       }
     },
     {
@@ -126,10 +126,10 @@
         "longitude": -82.6004954,
         "latitude": 42.0278141,
         "sequence": 70,
-        "imageAlt": "point point of interest",
+        "imageAlt": "Waterfront Promenade",
         "extra": false,
         "id": "p7poi",
-        "image": "p7poi.jpg",
+        "image": "/photos/p7poi.jpg",
         "address": "Robson Road 96;110",
         "name": "Waterfront Promenade"
       }
@@ -150,7 +150,7 @@
         "imageAlt": "DeLaurier Homestead",
         "extra": false,
         "id": "p19att",
-        "image": "p19att.jpg",
+        "image": "/photos/p19att.jpg",
         "address": "",
         "name": "DeLaurier Homestead"
       }
@@ -168,10 +168,10 @@
         "longitude": -82.517533,
         "latitude": 41.951419,
         "sequence": 220,
-        "imageAlt": "viewpoint point of interest",
+        "imageAlt": "Boardwalk Viewpoint",
         "extra": false,
         "id": "p22vie",
-        "image": "p22vie.jpg",
+        "image": "/photos/p22vie.jpg",
         "address": "",
         "name": "Boardwalk Viewpoint"
       }
@@ -189,10 +189,10 @@
         "longitude": -82.514956,
         "latitude": 41.939861,
         "sequence": 240,
-        "imageAlt": "picnic_site point of interest",
+        "imageAlt": "Picnic Site",
         "extra": false,
         "id": "p24pic",
-        "image": "p24pic.jpg",
+        "image": "/photos/p24pic.jpg",
         "address": "",
         "name": "Picnic Site"
       }
@@ -210,10 +210,10 @@
         "longitude": -82.51865,
         "latitude": 41.949087,
         "sequence": 200,
-        "imageAlt": "picnic_site point of interest",
+        "imageAlt": "Picnic Site",
         "extra": false,
         "id": "p20pic",
-        "image": "p20pic.jpg",
+        "image": "/photos/p20pic.jpg",
         "address": "",
         "name": "Picnic Site"
       }
@@ -234,7 +234,7 @@
         "imageAlt": "Sleepy Hollow",
         "extra": false,
         "id": "p18pic",
-        "image": "p18pic.jpg",
+        "image": "/photos/p18pic.jpg",
         "address": "Point Pelee Drive 1533",
         "name": "Sleepy Hollow"
       }
@@ -255,7 +255,7 @@
         "imageAlt": "Dunes",
         "extra": false,
         "id": "p17pic",
-        "image": "p17pic.jpg",
+        "image": "/photos/p17pic.jpg",
         "address": "Point Pelee Drive 1513",
         "name": "Dunes"
       }
@@ -276,7 +276,7 @@
         "imageAlt": "Marsh Tower",
         "extra": false,
         "id": "p14vie",
-        "image": "p14vie.jpg",
+        "image": "/photos/p14vie.jpg",
         "address": "",
         "name": "Marsh Tower"
       }
@@ -294,10 +294,10 @@
         "longitude": -82.531878,
         "latitude": 41.968379,
         "sequence": 130,
-        "imageAlt": "picnic_site point of interest",
+        "imageAlt": "Picnic Site",
         "extra": false,
         "id": "p13pic",
-        "image": "p13pic.jpg",
+        "image": "/photos/p13pic.jpg",
         "address": "",
         "name": "Picnic Site"
       }
@@ -316,10 +316,10 @@
         "longitude": "-82.5136",
         "latitude": "42.0432",
         "sequence": "90.0",
-        "imageAlt": "picnic_site point of interest",
+        "imageAlt": "Picnic Site",
         "extra": false,
         "id": "p10pic",
-        "image": "p10pic.jpg",
+        "image": "/photos/p10pic.jpg",
         "address": "",
         "name": "Picnic Site"
       }
@@ -337,10 +337,10 @@
         "longitude": -82.601925,
         "latitude": 42.05247,
         "sequence": 30,
-        "imageAlt": "museum point of interest",
+        "imageAlt": "Leamington Arts Centre",
         "extra": false,
         "id": "p3mus",
-        "image": "p3mus.jpg",
+        "image": "/photos/p3mus.jpg",
         "address": "Talbot Street West 72",
         "name": "Leamington Arts Centre"
       }
@@ -361,7 +361,7 @@
         "imageAlt": "Essex Kent Mennonite Historical Society",
         "extra": false,
         "id": "p4mus",
-        "image": "p4mus.jpg",
+        "image": "/photos/p4mus.jpg",
         "address": "",
         "name": "Essex Kent Mennonite Historical Society"
       }
@@ -380,9 +380,9 @@
         "latitude": 42.06283,
         "sequence": 20,
         "imageAlt": "Thiessen Orchards",
-        "extra": false,
+        "extra": true,
         "id": "p2att",
-        "image": "p2att.jpg",
+        "image": "/photos/p2att.jpg",
         "address": "Talbot Road East 400",
         "name": "Thiessen Orchards"
       }
@@ -403,7 +403,7 @@
         "imageAlt": "White Pine",
         "extra": false,
         "id": "p23pic",
-        "image": "p23pic.jpg",
+        "image": "/photos/p23pic.jpg",
         "address": "",
         "name": "White Pine"
       }
@@ -424,7 +424,7 @@
         "imageAlt": "Park Orientation",
         "extra": false,
         "id": "p10inf",
-        "image": "p10inf.jpg",
+        "image": "/photos/p10inf.jpg",
         "address": "",
         "name": "Park Orientation"
       }
@@ -442,10 +442,10 @@
         "longitude": -82.543458,
         "latitude": 41.981614,
         "sequence": 110,
-        "imageAlt": "viewpoint point of interest",
+        "imageAlt": "Viewpoint",
         "extra": false,
         "id": "p11vie",
-        "image": "p11vie.jpg",
+        "image": "/photos/p11vie.jpg",
         "address": "",
         "name": "Viewpoint"
       }
@@ -466,7 +466,7 @@
         "imageAlt": "Sanctuary",
         "extra": false,
         "id": "p12att",
-        "image": "p12att.jpg",
+        "image": "/photos/p12att.jpg",
         "address": "",
         "name": "Sanctuary"
       }
@@ -484,10 +484,10 @@
         "longitude": -82.516418,
         "latitude": 41.949899,
         "sequence": 210,
-        "imageAlt": "viewpoint point of interest",
+        "imageAlt": "Viewpoint",
         "extra": false,
         "id": "p21vie",
-        "image": "p21vie.jpg",
+        "image": "/photos/p21vie.jpg",
         "address": "",
         "name": "Viewpoint"
       }
@@ -508,9 +508,9 @@
         "imageAlt": "Kopegaron Woods",
         "extra": false,
         "id": "p1att",
-        "image": "p1att.jpg",
+        "image": "/photos/p1att.jpg",
         "address": "",
-        "name": "Kopegaron Woods"
+        "name": "Kopegaron Woods Conservation Area"
       }
     },
     {
@@ -522,7 +522,7 @@
         "imageAlt": "Visitor Centre",
         "extra": false,
         "id": "p50poi",
-        "image": "p50poi.jpg",
+        "image": "/photos/p50poi.jpg",
         "address": "",
         "name": "Point Pelee National Park Visitor Centre"
       },
@@ -543,7 +543,7 @@
         "imageAlt": "Tip Tower",
         "extra": false,
         "id": "p51poi",
-        "image": "p51poi.jpg",
+        "image": "/photos/p51poi.jpg",
         "address": "",
         "name": "Point Pelee Tip Tower"
       },
@@ -564,7 +564,7 @@
         "imageAlt": "East Point Beach",
         "extra": false,
         "id": "p54poi",
-        "image": "p54poi.jpg",
+        "image": "/photos/p54poi.jpg",
         "address": "",
         "name": "East Point Beach"
       },
@@ -585,7 +585,7 @@
         "imageAlt": "Point Pelee",
         "extra": false,
         "id": "p55poi",
-        "image": "p55poi.jpeg",
+        "image": "/photos/p55poi.jpeg",
         "address": "",
         "name": "Point Pelee"
       },
@@ -606,7 +606,7 @@
         "imageAlt": "Camp Henry",
         "extra": false,
         "id": "p38poi",
-        "image": "p38poi.jpg",
+        "image": "/photos/p38poi.jpg",
         "address": "",
         "name": "Camp Henry"
       },
@@ -627,7 +627,7 @@
         "imageAlt": "Northwest Beach",
         "extra": false,
         "id": "p56poi",
-        "image": "p56poi.jpg",
+        "image": "/photos/p56poi.jpg",
         "address": "",
         "name": "Northwest Beach"
       },
@@ -648,7 +648,7 @@
         "imageAlt": "East Beach",
         "extra": false,
         "id": "p57poi",
-        "image": "p57poi.jpg",
+        "image": "/photos/p57poi.jpg",
         "address": "",
         "name": "East Beach"
       },
@@ -669,7 +669,7 @@
         "imageAlt": "Black Willow Beach",
         "extra": false,
         "id": "p58poi",
-        "image": "p58poi.jpg",
+        "image": "/photos/p58poi.jpg",
         "address": "",
         "name": "Black Willow Beach"
       },
@@ -690,7 +690,7 @@
         "imageAlt": "East Beach (South)",
         "extra": false,
         "id": "p59poi",
-        "image": "p59poi.jpg",
+        "image": "/photos/p59poi.jpg",
         "address": "",
         "name": "East Beach (South)"
       },
@@ -711,7 +711,7 @@
         "imageAlt": "West Beach (South)",
         "extra": false,
         "id": "p60poi",
-        "image": "p60poi.jpg",
+        "image": "/photos/p60poi.jpg",
         "address": "",
         "name": "West Beach (South)"
       },
@@ -732,7 +732,7 @@
         "imageAlt": "Point Pelee Cemetary",
         "extra": false,
         "id": "p61poi",
-        "image": "p61poi.jpg",
+        "image": "/photos/p61poi.jpg",
         "address": "",
         "name": "Point Pelee Cemetary"
       },
@@ -753,7 +753,7 @@
         "imageAlt": "Tip Shuttle Stop",
         "extra": false,
         "id": "p62poi",
-        "image": "p62poi.jpg",
+        "image": "/photos/p62poi.jpg",
         "address": "",
         "name": "Tip Trolley Terminus"
       },
@@ -774,7 +774,7 @@
         "imageAlt": "Tip Shuttle Stop",
         "extra": false,
         "id": "p63poi",
-        "image": "p63poi.jpg",
+        "image": "/photos/p63poi.jpg",
         "address": "",
         "name": "Tip Trolley Stop"
       },
@@ -795,7 +795,7 @@
         "imageAlt": "42 Sign",
         "extra": false,
         "id": "p53poi",
-        "image": "p53poi.jpg",
+        "image": "/photos/p53poi.jpg",
         "address": "",
         "name": "42 Sign"
       },

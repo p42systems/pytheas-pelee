@@ -25,11 +25,6 @@ function SponsorPartner() {
           src="/logos/hackforge_logo.png"
           alt="Hackforge"
         />
-        <SponsorPartnerImg
-          large={false}
-          src="/logos/wera_logo.png"
-          alt="Windsor/Essex Rainbow Alliance"
-        />
       </SponsorPartnerContainer>
     </>
   );

@@ -13,12 +13,9 @@ import { fetchRoute } from "./services/route";
 import { fetchMarkerDetails, fetchMarkers } from "./services/markers";
 import { fetchBoundingBox } from "./services/boundingBoxServices";
 import {
-  contentWarning,
   tourInstructions,
   sponsors,
   about,
-  statement,
-  references,
 } from "./services/copy";
 
 /*********************************
@@ -371,15 +368,6 @@ export const tourPreferenceAtom: PrimitiveAtom<string> = atom("full");
  * Copy Query / Atoms
  *********************************/
 
-export const contentWarningCopyQueryAtom = atomWithQuery<
-  ReturnType<typeof contentWarning.fetchCopy>,
-  unknown
->((get) => ({
-  queryKey: ["content_warning_copy"],
-  copyComponent: contentWarning,
-  queryFn: contentWarning.fetchCopy,
-}));
-
 export const tourInstructionsCopyQueryAtom = atomWithQuery<
   ReturnType<typeof tourInstructions.fetchCopy>,
   unknown
@@ -405,22 +393,4 @@ export const aboutCopyQueryAtom = atomWithQuery<
   queryKey: ["about_copy"],
   copyComponent: about,
   queryFn: about.fetchCopy,
-}));
-
-export const statementCopyQueryAtom = atomWithQuery<
-  ReturnType<typeof about.fetchCopy>,
-  unknown
->((get) => ({
-  queryKey: ["statement_copy"],
-  copyComponent: statement,
-  queryFn: statement.fetchCopy,
-}));
-
-export const referencesCopyQueryAtom = atomWithQuery<
-  ReturnType<typeof references.fetchCopy>,
-  unknown
->((get) => ({
-  queryKey: ["references_copy"],
-  copyComponent: references,
-  queryFn: references.fetchCopy,
 }));

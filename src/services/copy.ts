@@ -23,7 +23,6 @@ class copyComponent {
   }
 }
 
-export const contentWarning = new copyComponent("contentWarning");
 
 export const tourInstructions = new copyComponent("tourInstructions");
 
@@ -31,6 +30,5 @@ export const sponsors = new copyComponent("sponsors");
 
 export const about = new copyComponent("about");
 
-export const statement = new copyComponent("statement");
 
 export const references = new copyComponent("references");

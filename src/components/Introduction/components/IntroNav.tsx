@@ -7,10 +7,9 @@ import { intro } from "../../../services/navigation";
 function IntroNav(props: {
   howToRef: RefObject<HTMLHeadingElement>;
   aboutRef: RefObject<HTMLHeadingElement>;
-  statementRef: RefObject<HTMLHeadingElement>;
   referencesRef: RefObject<HTMLHeadingElement>;
 }) {
-  const { howToRef, aboutRef, statementRef, referencesRef } = props;
+  const { howToRef, aboutRef, referencesRef } = props;
 
   return (
     <>
@@ -36,16 +35,7 @@ function IntroNav(props: {
             About the Site
           </GeneralLink>
         </li>
-        <li>
-          <GeneralLink
-            href="#statement"
-            onClick={() => {
-              intro.clickLink(statementRef);
-            }}
-          >
-            A Statement from Walter Cassidy
-          </GeneralLink>
-        </li>
+
         <li>
           <GeneralLink
             href="#references"
