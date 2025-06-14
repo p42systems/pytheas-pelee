@@ -316,12 +316,12 @@
         "longitude": "-82.5136",
         "latitude": "42.0432",
         "sequence": "90.0",
-        "imageAlt": "Picnic Site",
+        "imageAlt": "Hillman Marsh",
         "extra": false,
         "id": "p10pic",
         "image": "/photos/p10pic.jpg",
         "address": "",
-        "name": "Picnic Site"
+        "name": "Hillman Marsh Conservation Area"
       }
     },
     {
@@ -585,7 +585,7 @@
         "imageAlt": "Point Pelee",
         "extra": false,
         "id": "p55poi",
-        "image": "/photos/p55poi.jpeg",
+        "image": "/photos/p55poi.jpg",
         "address": "",
         "name": "Point Pelee"
       },

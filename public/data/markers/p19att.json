@@ -5,12 +5,23 @@
       "path": "/photos/p19att.jpg",
       "type": "image",
       "imageAlt": "DeLaurier Homestead"
+    },
+    {
+      "path": "/photos/p19att-1.jpg",
+      "type": "image",
+      "imageAlt": "DeLaurier Homestead Interior"
+    },
+    {
+      "path": "/photos/p19att-2.jpg",
+      "type": "image",
+      "imageAlt": "DeLaurier Homestead Boardwalk"
     }
   ],
   "description": [
     "The DeLaurier Homestead and trail is a two-storey, gable-roofed building with two attached log houses.",
     "The homestead illustrates the life of a French-Canadian pioneer family in the mid-19th Century. Walk the trail to observe nature's reclamation of an 1850s-era apple orchard.",
-    "Photo by The Cosmonaut via Wikipedia Commons. Licensed under CC BY-SA 2.5."
+    "Photo by The Cosmonaut via Wikipedia Commons. Licensed under CC BY-SA 2.5.",
+    "Interior & boardwalk photos by Ken Lund via Flickr, licensed under CC BY-SA 2.0."
   ],
   "image": "p19att.jpg"
 }

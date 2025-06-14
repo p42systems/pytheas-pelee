@@ -5,11 +5,18 @@
       "path": "/photos/p38poi.jpg",
       "type": "image",
       "imageAlt": "Camp Henry"
+    },
+    {
+      "path": "/photos/p38poi-1.jpg",
+      "type": "image",
+      "imageAlt": "PALS Fraternity Camp 1932"
     }
   ],
   "description": [
     "Camp Henry is the location of 24 oTENTik cabins, available for rent year-round. Camp Henry includes a number of amenities including a store, a play area, washrooms and showers.",
-    "Photo is courtesy of the Government of Canada. Find the original at https://parks.canada.ca/pn-np/on/pelee/activ/otentik"
+    "Camp Henry is named for the Boy Scout camp previously in place elsewhere at Point Pelee National Park. The original site was closed due to PCB contamination.",
+    "Photo is courtesy of the Government of Canada. Find the original at https://parks.canada.ca/pn-np/on/pelee/activ/otentik",
+    "Archival Photo under the Public Domain, via Internet Archive."
   ],
   "image": "p38poi.jpg"
 }
