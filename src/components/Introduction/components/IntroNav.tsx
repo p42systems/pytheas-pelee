@@ -7,9 +7,8 @@ import { intro } from "../../../services/navigation";
 function IntroNav(props: {
   howToRef: RefObject<HTMLHeadingElement>;
   aboutRef: RefObject<HTMLHeadingElement>;
-  referencesRef: RefObject<HTMLHeadingElement>;
 }) {
-  const { howToRef, aboutRef, referencesRef } = props;
+  const { howToRef, aboutRef } = props;
 
   return (
     <>
@@ -36,16 +35,7 @@ function IntroNav(props: {
           </GeneralLink>
         </li>
 
-        <li>
-          <GeneralLink
-            href="#references"
-            onClick={() => {
-              intro.clickLink(referencesRef);
-            }}
-          >
-            References
-          </GeneralLink>
-        </li>
+
       </ul>
     </>
   );

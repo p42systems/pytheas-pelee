@@ -5,11 +5,17 @@
       "path": "/photos/p14vie.jpg",
       "type": "image",
       "imageAlt": "Marsh Tower"
+    },
+    {
+      "path": "/photos/p14vie-1.jpg",
+      "type": "image",
+      "imageAlt": "Marsh Tower Postcard"
     }
   ],
   "description": [
     "The Marsh Tower dominates the marsh landscape and provides a panoramic view of the surrounding area. It is a popular spot for birdwatching and photography.",
-    "Photo by Andrea_44 on Wikimedia Commons, licensed under CC BY 2.0."
+    "Photo by Andrea_44 on Wikimedia Commons, licensed under CC BY 2.0.",
+    "Postcard image in the public domain, via Internet Archive."
   ],
   "image": "p14vie.jpg"
 }

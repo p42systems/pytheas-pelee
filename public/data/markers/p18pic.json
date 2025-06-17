@@ -5,12 +5,18 @@
       "path": "/photos/p18pic.jpg",
       "type": "image",
       "imageAlt": "Prothonary Warbler"
+    },
+    {
+      "path": "/photos/p18pic-1.jpg",
+      "type": "image",
+      "imageAlt": "Sleepy Hollow Picnic Area Postcard"
     }
   ],
   "description": [
-    "Sleepy Hollow picnic area features a picnic pavilion, washroom facilities, and picnic tables. It is a great spot for family gatherings and outdoor meals.",
+    "Sleepy Hollow features a picnic pavilion, washroom facilities, and picnic tables. It is a great spot for family gatherings and outdoor meals.",
     "This picnic area is connected to the park's bike and walking trail network and offers easy access to a secluded beach.",
-    "Photo is \"Prothonotary Warbler\" by Deenaerrampalli via Wikimedia Commons, licensed under CC BY-SA 4.0."
+    "Photo is \"Prothonotary Warbler\" by Deenaerrampalli via Wikimedia Commons, licensed under CC BY-SA 4.0.",
+    "Postcard image via Internet Archive. In the public domain."
   ],
-  "image": "p18pic.jpg"
+  "image": "p18pic-1.jpg"
 }
