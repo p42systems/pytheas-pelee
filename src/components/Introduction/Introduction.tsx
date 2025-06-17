@@ -31,12 +31,9 @@ function Introduction() {
       </Header>
       <MainContainer>
         <article>
-          <IntroNav
-            howToRef={howToRef}
-            aboutRef={aboutRef}
-          />
-          <TourInstructionsIntro howToRef={howToRef} />
+          <IntroNav howToRef={howToRef} aboutRef={aboutRef} />
           <About aboutRef={aboutRef} />
+          <TourInstructionsIntro howToRef={howToRef} />
         </article>
       </MainContainer>
       <Footer />

@@ -34,10 +34,10 @@ export const MainContainer = styled.main(() => ({
   "@media screen and (min-height: 1106px)": {
     minHeight: "calc(100vh - 325px)",
   },
-  "@media screen and (min-width: 769px)": {
-    width: "769px",
+  "@media screen and (min-width: 970px)": {
+    width: "950px",
   },
-  "@media screen and (max-width: 769px)": {
+  "@media screen and (max-width: 970px)": {
     width: "90vw",
     padding: "0px 10px",
     boxSizing: "border-box",

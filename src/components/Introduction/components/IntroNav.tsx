@@ -14,17 +14,7 @@ function IntroNav(props: {
   return (
     <>
       <AboutHeader>Information about the Tour</AboutHeader>
-      <ul>
-        <li>
-          <GeneralLink
-            href="#how-to-take-the-tour"
-            onClick={() => {
-              intro.clickLink(howToRef);
-            }}
-          >
-            How to Take the Tour
-          </GeneralLink>
-        </li>
+      {/* <ul>
         <li>
           <GeneralLink
             href="#about"
@@ -35,18 +25,17 @@ function IntroNav(props: {
             About the Site
           </GeneralLink>
         </li>
-
         <li>
           <GeneralLink
-            href="#references"
+            href="#how-to-take-the-tour"
             onClick={() => {
-              intro.clickLink(referencesRef);
+              intro.clickLink(howToRef);
             }}
           >
-            References
+            How to Take the Tour
           </GeneralLink>
         </li>
-      </ul>
+      </ul> */}
     </>
   );
 }
