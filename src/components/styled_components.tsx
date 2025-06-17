@@ -34,10 +34,10 @@ export const MainContainer = styled.main(() => ({
   "@media screen and (min-height: 1106px)": {
     minHeight: "calc(100vh - 325px)",
   },
-  "@media screen and (min-width: 769px)": {
-    width: "769px",
+  "@media screen and (min-width: 970px)": {
+    width: "950px",
   },
-  "@media screen and (max-width: 769px)": {
+  "@media screen and (max-width: 970px)": {
     width: "90vw",
     padding: "0px 10px",
     boxSizing: "border-box",
@@ -123,7 +123,7 @@ export const StaticheaderBackgroundButton = styled.span((props) => ({
 
 export const StatictourButtonButton = styled.span((props) => ({
   backgroundColor: props.theme.colors.tertiary,
-  color: props.theme.colors.primary,
+  color: props.theme.colors.secondary,
   textTransform: "uppercase",
   fontSize: "0.9rem",
   fontWeight: 900,
@@ -625,6 +625,23 @@ export const MapControlErrorMessageContainer = styled.div((props) => ({
 export const MapControlErrorMessage = styled.span((props) => ({
   color: props.theme.colors.tertiary,
   padding: "2px",
+}));
+
+export const SlideTitle = styled.p((props) => ({
+  color: `${props.theme.colors.primary}`,
+  backgroundColor: `${props.theme.colors.quaternary}`,
+  margin: "0",
+  padding: "10px",
+  fontFamily: `"Roboto Slab",serif`,
+  fontWeight: "700",
+}));
+
+export const SlideDescription = styled.p((props) => ({
+  color: `${props.theme.colors.senary}`,
+  backgroundColor: `${props.theme.colors.primary}`,
+  margin: "0",
+  padding: "10px",
+  fontSize: "0.9rem",
 }));
 
 export const DetailsImage = styled.img((props) => ({
@@ -1132,6 +1149,7 @@ export const NavigationContentButton = styled(NavigationButton)((props) => ({
 
 export const NavigationTourButton = styled(NavigationButton)((props) => ({
   backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
 }));
 
 export const NavigationDropDownButton = styled(NavigationButton)((props) => ({

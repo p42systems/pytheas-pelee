@@ -8,8 +8,6 @@ import Images from "./components/Images";
 function Media() {
   const detail = useAtomValue(detailsQueryAtom);
 
-  // Conditional detail.url rendering
-
   const isMultipleImages = (urlObject: {
     path: string;
     type: string;
