@@ -123,7 +123,7 @@ export const StaticheaderBackgroundButton = styled.span((props) => ({
 
 export const StatictourButtonButton = styled.span((props) => ({
   backgroundColor: props.theme.colors.tertiary,
-  color: props.theme.colors.primary,
+  color: props.theme.colors.secondary,
   textTransform: "uppercase",
   fontSize: "0.9rem",
   fontWeight: 900,
@@ -1132,6 +1132,7 @@ export const NavigationContentButton = styled(NavigationButton)((props) => ({
 
 export const NavigationTourButton = styled(NavigationButton)((props) => ({
   backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
 }));
 
 export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
