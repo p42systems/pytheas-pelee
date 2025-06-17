@@ -5,11 +5,16 @@
       "path": "/photos/p50poi.jpg",
       "type": "image",
       "imageAlt": "Visitor Centre"
+    },
+    {
+      "path": "/photos/p50poi-1.jpg",
+      "type": "image",
+      "imageAlt": "Visitor Centre Interior"
     }
   ],
   "description": [
     "The Visitor Centre is the main interpretive centre for the park. It features exhibits about the park's natural and cultural history, a gift shop, and restrooms. The centre also provides information on trails, wildlife, and park activities.",
-    "Photo by Ken Lund from Reno, Nevada, USA, via Flickr, licensed under CC BY-SA 2.0."
+    "Interior photos by Sue Thompson via Flickr. Licensed under CC BY-ND 2.0."
   ],
   "image": "p50poi.jpg" 
 }

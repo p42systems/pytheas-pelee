@@ -5,13 +5,24 @@
       "path": "/photos/p10pic.jpg",
       "type": "image",
       "imageAlt": "Hillman Marsh"
+    },
+    {
+      "path": "/photos/p10pic-1.jpg",
+      "type": "image",
+      "imageAlt": "Hillman Marsh in Winter"
+    },
+    {
+      "path": "/photos/p10pic-2.jpg",
+      "type": "image",
+      "imageAlt": "Hillman Marsh Farmhouse"
     }
   ],
   "description": [
     "Hillman Marsh is a Conservation Area featuring 87 acres of managed shorebird habitat, offering excellent birdwatching opportunties.",
     "The site includes a nature centre, trails for hiking, biking and skiing. Fishing, canoeing and picnicking are also popular activities.",
     "Free admission and parking.",
-  "Photo by Mark Nenadov via Wikimedia Commons, licensed under CC BY 2.0."
+  "Photo by Mark Nenadov via Wikimedia Commons, licensed under CC BY 2.0.",
+  "Hillman Marsh in Winter and Farmhouse photos by Andrea_44 via Flickr, licensed under CC BY 2.0."
   ],
   
   "image": "p10pic.jpg"

@@ -5,12 +5,23 @@
       "path": "/photos/p8poi.jpg",
       "type": "image",
       "imageAlt": "Leamington Municipal Marina"
+    },
+    {
+      "path": "/photos/p8poi-1.jpg",
+      "type": "image",
+      "imageAlt": "Leamington Municipal Marina (1960s)"
+    },
+    {
+      "path": "/photos/p8poi-2.jpg",
+      "type": "image",
+      "imageAlt": "Steamer Pelee at Leamington Dock (1940)"
     }
+
   ],
   "description": [
     "The Leamington Municipal Marina is a working marina with amenities for boaters and visitors. It features boat slips, fuel services, and a launch ramp.",
-    "The Lakeside Patio Restaurant, located at the marina, offers a scenic dining experience with views of the water.",
-    "Photo by Andrea_44 via Flickr, licensed under CC BY 2.0."
+    "Photo by Andrea_44 via Flickr, licensed under CC BY 2.0.",
+    "Archival photos in the public domain, via Internet Archive."
   ],
   "image": "p8poi.jpg"
 }

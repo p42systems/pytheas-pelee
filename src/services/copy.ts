@@ -31,4 +31,3 @@ export const sponsors = new copyComponent("sponsors");
 export const about = new copyComponent("about");
 
 
-export const references = new copyComponent("references");

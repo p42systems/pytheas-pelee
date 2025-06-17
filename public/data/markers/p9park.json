@@ -5,11 +5,22 @@
       "path": "/photos/p9park.jpg",
       "type": "image",
       "imageAlt": "Mersea Park"
+    },
+    {
+      "path": "/photos/p9park-1.jpg",
+      "type": "image",
+      "imageAlt": "Mersea Park in winter"
+    },
+    {
+      "path": "/photos/p9park-2.jpg",
+      "type": "image",
+      "imageAlt": "Mersea Park Beach"
     }
   ],
   "description": [
     "Mersea Park is a 13-acre community park located on Mersea Road 2 in Leamington. It features a variety of amenities including a playground, sports fields, and picnic areas. The park is designed for family-friendly activities and community gatherings.",
-    "Photo by kagazuda via Wikimapia.org. Licensed under CC BY-SA."
+    "Playground and beach photos by kagazuda via Wikimapia.org. Licensed under CC BY-SA.",
+    "Winter photo by Jamie via Flickr, licensed under CC BY 2.0."
   ],
   "image": "p9park.jpg"
 }

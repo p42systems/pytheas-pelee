@@ -7,9 +7,14 @@
       "imageAlt": "Mash Boardwalk / Pelee Wings at the Marsh"
     },
     {
-      "path": "/photos/p16poi-1.pjg",
+      "path": "/photos/p16poi-1.jpg",
       "type": "image",
       "imageAlt": "Family Dinner by Nikkiband"
+    },
+    {
+      "path": "/photos/p16poi-2.jpg",
+      "type": "image",
+      "imageAlt": "Marsh Boardwalk by Andrea"
     }
   ],
   "description": [
@@ -17,7 +22,8 @@
     "Pelee Wings at the Marsh offers a limited selection of gift shop items along with bike, canoe and kayak rentals. Inquire here about guided birding tours.",
     "Photos:",
     "\"Marsh Boardwalk and Canoe by Jason Zhang via Wikipedia Commons, licensed under CC BY-SA 4.0. It shows the boardwalk winding through the marsh.",
-    "\"Family Dinner\" by Nikkiband via Wikipedia Commons, licensed under CC BY-SA 3.0. It depicts a family of Black Terns."
+    "\"Family Dinner\" by Nikkiband via Wikipedia Commons, licensed under CC BY-SA 3.0. It depicts a family of Black Terns.",
+    "\"Point Pelee Marsh\" by Andrea via Flickr, licensed under CC BY-NC 2.0. It shows the boardwalk with a view of the marsh and surrounding vegetation."
   ],
   "image": "p16poi.jpg"
 }
