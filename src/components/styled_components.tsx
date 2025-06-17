@@ -627,6 +627,23 @@ export const MapControlErrorMessage = styled.span((props) => ({
   padding: "2px",
 }));
 
+export const SlideTitle = styled.p((props) => ({
+  color: `${props.theme.colors.primary}`,
+  backgroundColor: `${props.theme.colors.quaternary}`,
+  margin: "0",
+  padding: "10px",
+  fontFamily: `"Roboto Slab",serif`,
+  fontWeight: "700",
+}));
+
+export const SlideDescription = styled.p((props) => ({
+  color: `${props.theme.colors.senary}`,
+  backgroundColor: `${props.theme.colors.primary}`,
+  margin: "0",
+  padding: "10px",
+  fontSize: "0.9rem",
+}));
+
 export const DetailsImage = styled.img((props) => ({
   padding: "5px",
   backgroundColor: `${props.theme.colors.senary}`,
