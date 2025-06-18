@@ -26,7 +26,8 @@
         "id": "p8poi",
         "image": "/photos/p8poi.jpg",
         "address": "",
-        "name": "Leamington Municipal Marina"
+        "name": "Leamington Municipal Marina",
+        "type": "attraction"
       }
     },
     {
@@ -47,7 +48,8 @@
         "id": "p9park",
         "image": "/photos/p9park.jpg",  
         "address": "Robson Rd 101",
-        "name": "Mersea Park"
+        "name": "Mersea Park",
+        "type": "attraction"
       }
     },
     {
@@ -68,7 +70,8 @@
         "id": "p6park",
         "image": "/photos/p6park.jpg",
         "address": "Robson Rd 101",
-        "name": "Rick Atkin Park"
+        "name": "Rick Atkin Park",
+        "type": "attraction"
       }
     },
     {
@@ -89,7 +92,8 @@
         "id": "p5park",
         "image": "/photos/p5park.jpg",
         "address": "Park Ln W 12",
-        "name": "Seacliffe Park"
+        "name": "Seacliffe Park",
+        "type": "attraction"
       }
     },
     {
@@ -110,7 +114,8 @@
         "id": "p16poi",
         "image": "/photos/p16poi.jpg",
         "address": "Point Pelee Drive 1378",
-        "name": "Marsh Boardwalk / Pelee Wings at the Marsh"
+        "name": "Marsh Boardwalk / Pelee Wings at the Marsh",
+        "type": "attraction"
       }
     },
     {
@@ -131,7 +136,8 @@
         "id": "p7poi",
         "image": "/photos/p7poi.jpg",
         "address": "Robson Road 96;110",
-        "name": "Waterfront Promenade"
+        "name": "Waterfront Promenade",
+        "type": "attraction"
       }
     },
     {
@@ -152,7 +158,8 @@
         "id": "p19att",
         "image": "/photos/p19att.jpg",
         "address": "",
-        "name": "DeLaurier Homestead"
+        "name": "DeLaurier Homestead",
+        "type": "attraction"
       }
     },
     {
@@ -173,7 +180,8 @@
         "id": "p22vie",
         "image": "/photos/p22vie.jpg",
         "address": "",
-        "name": "Boardwalk Viewpoint"
+        "name": "Boardwalk Viewpoint",
+        "type": "attraction"
       }
     },
     {
@@ -194,7 +202,8 @@
         "id": "p24pic",
         "image": "/photos/p24pic.jpg",
         "address": "",
-        "name": "Picnic Site"
+        "name": "Picnic Site",
+        "type": "picnic"
       }
     },
     {
@@ -215,7 +224,8 @@
         "id": "p20pic",
         "image": "/photos/p20pic.jpg",
         "address": "",
-        "name": "Picnic Site"
+        "name": "Picnic Site",
+        "type": "picnic"
       }
     },
     {
@@ -236,7 +246,8 @@
         "id": "p18pic",
         "image": "/photos/p18pic.jpg",
         "address": "Point Pelee Drive 1533",
-        "name": "Sleepy Hollow"
+        "name": "Sleepy Hollow",
+        "type": "picnic"
       }
     },
     {
@@ -257,7 +268,8 @@
         "id": "p17pic",
         "image": "/photos/p17pic.jpg",
         "address": "Point Pelee Drive 1513",
-        "name": "Dunes"
+        "name": "Dunes",
+        "type": "picnic"
       }
     },
     {
@@ -278,7 +290,8 @@
         "id": "p14vie",
         "image": "/photos/p14vie.jpg",
         "address": "",
-        "name": "Marsh Tower"
+        "name": "Marsh Tower",
+        "type": "attraction"
       }
     },
     {
@@ -299,7 +312,8 @@
         "id": "p13pic",
         "image": "/photos/p13pic.jpg",
         "address": "",
-        "name": "Picnic Site"
+        "name": "Picnic Site",
+        "type": "picnic"
       }
     },
     {
@@ -321,7 +335,8 @@
         "id": "p10pic",
         "image": "/photos/p10pic.jpg",
         "address": "",
-        "name": "Hillman Marsh Conservation Area"
+        "name": "Hillman Marsh Conservation Area",
+        "type": "attraction"
       }
     },
     {
@@ -342,7 +357,8 @@
         "id": "p3mus",
         "image": "/photos/p3mus.jpg",
         "address": "Talbot Street West 72",
-        "name": "Leamington Arts Centre"
+        "name": "Leamington Arts Centre",
+        "type": "attraction"
       }
     },
     {
@@ -363,7 +379,8 @@
         "id": "p4mus",
         "image": "/photos/p4mus.jpg",
         "address": "",
-        "name": "Essex Kent Mennonite Historical Society"
+        "name": "Essex Kent Mennonite Historical Society",
+        "type": "attraction"
       }
     },
     {
@@ -384,7 +401,8 @@
         "id": "p2att",
         "image": "/photos/p2att.jpg",
         "address": "Talbot Road East 400",
-        "name": "Thiessen Orchards"
+        "name": "Thiessen Orchards",
+        "type": "attraction"
       }
     },
     {
@@ -405,7 +423,8 @@
         "id": "p23pic",
         "image": "/photos/p23pic.jpg",
         "address": "",
-        "name": "White Pine"
+        "name": "White Pine",
+        "type": "picnic"
       }
     },
     {
@@ -426,7 +445,8 @@
         "id": "p10inf",
         "image": "/photos/p10inf.jpg",
         "address": "",
-        "name": "Park Orientation"
+        "name": "Park Orientation",
+        "type": "attraction"
       }
     },
     {
@@ -447,7 +467,8 @@
         "id": "p11vie",
         "image": "/photos/p11vie.jpg",
         "address": "",
-        "name": "Viewpoint"
+        "name": "Viewpoint",
+        "type": "attraction"
       }
     },
     {
@@ -468,7 +489,8 @@
         "id": "p12att",
         "image": "/photos/p12att.jpg",
         "address": "",
-        "name": "Sanctuary"
+        "name": "Sanctuary",
+        "type": "picnic"
       }
     },
     {
@@ -489,7 +511,8 @@
         "id": "p21vie",
         "image": "/photos/p21vie.jpg",
         "address": "",
-        "name": "Viewpoint"
+        "name": "Viewpoint",
+        "type": "attraction"
       }
     },
     {
@@ -510,7 +533,8 @@
         "id": "p1att",
         "image": "/photos/p1att.jpg",
         "address": "",
-        "name": "Kopegaron Woods Conservation Area"
+        "name": "Kopegaron Woods Conservation Area",
+        "type": "attraction"
       }
     },
     {
@@ -524,7 +548,8 @@
         "id": "p50poi",
         "image": "/photos/p50poi.jpg",
         "address": "",
-        "name": "Point Pelee National Park Visitor Centre"
+        "name": "Point Pelee National Park Visitor Centre",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -545,7 +570,8 @@
         "id": "p51poi",
         "image": "/photos/p51poi.jpg",
         "address": "",
-        "name": "Point Pelee Tip Tower"
+        "name": "Point Pelee Tip Tower",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -566,7 +592,8 @@
         "id": "p54poi",
         "image": "/photos/p54poi.jpg",
         "address": "",
-        "name": "East Point Beach"
+        "name": "East Point Beach",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -587,7 +614,8 @@
         "id": "p55poi",
         "image": "/photos/p55poi.jpg",
         "address": "",
-        "name": "Point Pelee"
+        "name": "Point Pelee",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -608,7 +636,8 @@
         "id": "p38poi",
         "image": "/photos/p38poi.jpg",
         "address": "",
-        "name": "Camp Henry"
+        "name": "Camp Henry",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -629,7 +658,8 @@
         "id": "p56poi",
         "image": "/photos/p56poi.jpg",
         "address": "",
-        "name": "Northwest Beach"
+        "name": "Northwest Beach",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -650,7 +680,8 @@
         "id": "p57poi",
         "image": "/photos/p57poi.jpg",
         "address": "",
-        "name": "East Beach"
+        "name": "East Beach",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -671,7 +702,8 @@
         "id": "p58poi",
         "image": "/photos/p58poi.jpg",
         "address": "",
-        "name": "Black Willow Beach"
+        "name": "Black Willow Beach",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -692,7 +724,8 @@
         "id": "p59poi",
         "image": "/photos/p59poi.jpg",
         "address": "",
-        "name": "East Beach (South)"
+        "name": "East Beach (South)",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -713,7 +746,8 @@
         "id": "p60poi",
         "image": "/photos/p60poi.jpg",
         "address": "",
-        "name": "West Beach (South)"
+        "name": "West Beach (South)",
+        "type": "beach"
       },
       "geometry": {
         "coordinates": [
@@ -734,7 +768,8 @@
         "id": "p61poi",
         "image": "/photos/p61poi.jpg",
         "address": "",
-        "name": "Point Pelee Cemetary"
+        "name": "Point Pelee Cemetary",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -755,7 +790,8 @@
         "id": "p62poi",
         "image": "/photos/p62poi.jpg",
         "address": "",
-        "name": "Tip Trolley Terminus"
+        "name": "Tip Trolley Terminus",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -776,7 +812,8 @@
         "id": "p63poi",
         "image": "/photos/p63poi.jpg",
         "address": "",
-        "name": "Tip Trolley Stop"
+        "name": "Tip Trolley Stop",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
@@ -797,7 +834,8 @@
         "id": "p53poi",
         "image": "/photos/p53poi.jpg",
         "address": "",
-        "name": "42 Sign"
+        "name": "42 Sign",
+        "type": "attraction"
       },
       "geometry": {
         "coordinates": [
