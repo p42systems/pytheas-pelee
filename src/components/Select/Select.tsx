@@ -26,10 +26,9 @@ function Select() {
     };
 
   const featuresList = {
+    attraction: "Attractions",
     picnic: "Picnic sites",
     beach: "Beaches",
-    camping: "Camping",
-    sightseeing: "Sightseeing",
     restaurants: "Restaurants",
   };
 
