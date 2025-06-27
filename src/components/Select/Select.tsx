@@ -1,5 +1,6 @@
 import { useLocation } from "wouter";
-import { useAtom } from "jotai";
+import React, { useState } from "react";
+import { useAtomValue } from "jotai";
 import Header from "../General/Header";
 import Footer from "../General/Footer";
 
@@ -10,19 +11,20 @@ import {
   SelectCheckbox,
   SelectCheckboxLabel,
 } from "../styled_components";
-// import SelectCard from "./SelectCard";
-// import { allMarkersQueryAtom } from "../../atoms";
-import { featureFiltersAtom } from "../../atoms";
+import SelectCard from "./SelectCard";
+import { featureFiltersAtom, allMarkersQueryAtom } from "../../atoms";
 import { back } from "../../services/navigation";
 
 function Select() {
+  const { markers } = useAtomValue(allMarkersQueryAtom);
+
   const [, setLocation] = useLocation();
-  const [filters, setFilters] = useAtom(featureFiltersAtom);
+  const [filters, setFilters] = useState({ ...featureFiltersAtom });
 
   const handleChange =
     (feature: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setFilters({ ...filters, [feature]: e.target.checked });
-      console.log({ ...filters, [feature]: e.target.checked });
+      console.log(filters);
     };
 
   const featuresList = {
@@ -31,6 +33,19 @@ function Select() {
     beach: "Beaches",
     restaurants: "Restaurants",
   };
+
+  // const filterMarkersByType = (type: string) =>
+  //   Object.entries(markers)
+  //     .filter(([_, marker]) => marker.type === type)
+  //     .reduce((acc, [key, marker]) => {
+  //       acc[key] = marker;
+  //       return acc;
+  //     }, {} as Record<string, typeof markers[keyof typeof markers]>);
+
+  // const attractions = filterMarkersByType("attraction");
+  // const picnicSites = filterMarkersByType("picnic");
+  // const beaches = filterMarkersByType("beach");
+  // const restaurants = filterMarkersByType("restaurant");
 
   return (
     <>
@@ -48,20 +63,25 @@ function Select() {
         <p>
           Filter different routes by the features you would like to be included:
         </p>
-        <div style={{ minWidth: "90%", marginBottom: "1rem" }}>
+        <div
+          style={{
+            minWidth: "90%",
+            marginBottom: "1rem",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
           {Object.entries(featuresList).map(([key, value]) => (
-            <>
-              <SelectCheckboxLabel key={key}>
-                <SelectCheckbox
-                  type="checkbox"
-                  name={key}
-                  checked={filters[key] || false}
-                  onChange={handleChange(key)}
-                />
-                {value}
-              </SelectCheckboxLabel>
-              <br />
-            </>
+            <SelectCheckboxLabel key={key}>
+              <SelectCheckbox
+                type="checkbox"
+                name={key}
+                key={key}
+                checked={filters[key] || false}
+                onChange={handleChange(key)}
+              />
+              {value}
+            </SelectCheckboxLabel>
           ))}
         </div>
         <SelectionsContainer></SelectionsContainer>

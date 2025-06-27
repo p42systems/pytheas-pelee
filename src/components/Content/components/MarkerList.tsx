@@ -24,11 +24,27 @@ function MarkerList() {
 
   const { markers, order } = useAtomValue(markersQueryAtom);
 
+  const filterMarkersByType = (type: string) =>
+    Object.entries(markers)
+      .filter(([_, marker]) => marker.type === type)
+      .reduce((acc, [key, marker]) => {
+        acc[key] = marker;
+        return acc;
+      }, {} as Record<string, typeof markers[keyof typeof markers]>);
+
+  const attractions = filterMarkersByType("attraction");
+  const picnicSites = filterMarkersByType("picnic");
+  const beaches = filterMarkersByType("beach");
+  const restaurants = filterMarkersByType("restaurant");
+
   return (
-    <CardsContainer ref={scrollableRef} aria-label="List of markers">
-      {order
-        .map((makerId) => markers[makerId])
-        .map((marker) => (
+    <>
+      <h2>Picnic Sites</h2>
+      <CardsContainer
+        ref={scrollableRef}
+        aria-label="List of markers with picnic sites"
+      >
+        {Object.values(picnicSites).map((marker) => (
           <MarkerCard
             key={marker.id}
             marker={marker}
@@ -36,7 +52,53 @@ function MarkerList() {
             shouldScroll={shouldScroll}
           />
         ))}
-    </CardsContainer>
+      </CardsContainer>
+
+      <h2>Beaches</h2>
+      <CardsContainer
+        ref={scrollableRef}
+        aria-label="List of markers with beaches"
+      >
+        {Object.values(beaches).map((marker) => (
+          <MarkerCard
+            key={marker.id}
+            marker={marker}
+            selected={marker.id === lastViewedMarker}
+            shouldScroll={shouldScroll}
+          />
+        ))}
+      </CardsContainer>
+
+      <h2>Attractions</h2>
+      <CardsContainer
+        ref={scrollableRef}
+        aria-label="List of markers with attractions"
+      >
+        {Object.values(attractions).map((marker) => (
+          <MarkerCard
+            key={marker.id}
+            marker={marker}
+            selected={marker.id === lastViewedMarker}
+            shouldScroll={shouldScroll}
+          />
+        ))}
+      </CardsContainer>
+
+      <h2>Restaurants</h2>
+      <CardsContainer
+        ref={scrollableRef}
+        aria-label="List of markers with restaurants"
+      >
+        {Object.values(restaurants).map((marker) => (
+          <MarkerCard
+            key={marker.id}
+            marker={marker}
+            selected={marker.id === lastViewedMarker}
+            shouldScroll={shouldScroll}
+          />
+        ))}
+      </CardsContainer>
+    </>
   );
 }
 

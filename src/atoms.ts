@@ -12,11 +12,7 @@ import { FeatureCollection } from "geojson";
 import { fetchRoute } from "./services/route";
 import { fetchMarkerDetails, fetchMarkers } from "./services/markers";
 import { fetchBoundingBox } from "./services/boundingBoxServices";
-import {
-  tourInstructions,
-  sponsors,
-  about,
-} from "./services/copy";
+import { tourInstructions, sponsors, about } from "./services/copy";
 
 /*********************************
  * URL matcher
@@ -294,6 +290,7 @@ export const markersQueryAtom = atomWithQuery<
   queryKey: ["markers"],
   queryFn: async () => {
     const tourPreference = get(tourPreferenceAtom);
+    console.log(fetchMarkers(tourPreference));
     return fetchMarkers(tourPreference);
   },
 }));
@@ -305,8 +302,20 @@ export const allMarkersQueryAtom = atomWithQuery<
   queryKey: ["markers"],
   queryFn: async () => {
     const fullTour = get(fullTourAtom);
-
     return fetchMarkers(fullTour);
+  },
+}));
+
+export const filteredMarkersQueryAtom = atomWithQuery<
+  ReturnType<typeof fetchMarkers>,
+  unknown
+>((get) => ({
+  queryKey: ["markers"],
+  queryFn: async () => {
+    const tourPreference = get(tourPreferenceAtom);
+    let markers = await fetchMarkers(tourPreference);
+    // const featureFilters = get(featureFiltersAtom);
+    return markers;
   },
 }));
 
@@ -378,7 +387,7 @@ export const fullTourAtom: PrimitiveAtom<string> = atom("full");
 
 export const tourPreferenceAtom: PrimitiveAtom<string> = atom("full");
 
-export const featureFiltersAtom: PrimitiveAtom<{ [key: string]: boolean }> = 
+export const featureFiltersAtom: PrimitiveAtom<{ [key: string]: boolean }> =
   atom({});
 
 /*********************************

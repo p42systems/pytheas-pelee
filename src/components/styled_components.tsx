@@ -99,7 +99,7 @@ export const SelectionsContainer = styled.article((props) => ({
   maxWidth: "100%",
   border: `2px solid ${props.theme.colors.primary}`,
   borderRadius: "5px",
-  margin: "0.5rem",
+  margin: "0.5rem 0",
   marginBottom: "3rem",
   padding: "1rem",
   backgroundColor: props.theme.colors.primary + `88`,

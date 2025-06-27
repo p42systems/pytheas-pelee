@@ -17,6 +17,7 @@ export type IMarker = {
   sequence: number;
   image: string;
   imageAlt: string;
+  type?: string;
 };
 
 export type MarkerContext = {
