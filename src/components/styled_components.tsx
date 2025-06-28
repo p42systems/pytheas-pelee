@@ -93,7 +93,7 @@ export const GeneralLink = styled(Link)((props) => ({
 export const SelectionsContainer = styled.article((props) => ({
   display: "flex",
   flexFlow: "row wrap",
-  alignItems: "center",
+  alignItems: "stretch",
   justifyContent: "center",
   minHeight: "250px",
   maxWidth: "100%",
@@ -208,6 +208,81 @@ export const SelectCardContainer = styled.article((props) => ({
   gridTemplateRows: "1fr",
   position: "relative",
   backgroundColor: props.theme.colors.quaternary,
+}));
+
+export const SelectRouteCardContainer = styled.article((props) => ({
+  border: `2px solid ${props.theme.colors.primary}`,
+  width: "250px",
+  padding: "1rem",
+  borderRadius: "5px",
+  backgroundColor: "#CE8751",
+  margin: "0.5rem",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "stretch",
+}));
+
+export const RouteList = styled.ul(() => ({
+  display: "flex",
+  flexDirection: "column",
+  paddingLeft: "0",
+  margin: "1rem 0",
+  listStyle: "none",
+  position: "relative",
+  gap: "1rem",
+}));
+
+export const RouteListItem = styled.li(() => ({
+  display: "flex",
+  alignItems: "center",
+  position: "relative",
+}));
+
+export const RouteListLink = styled.a((props) => ({
+  color: props.theme.colors.octonary,
+  fontWeight: "600",
+  textDecoration: "none",
+  "&:hover, &:active": {
+    textDecoration: "underline",
+    color: props.theme.colors.primary,
+  },
+}));
+
+export const RouteLine = styled.span(() => ({
+  position: "absolute",
+  left: "5px",
+  top: "0.8em",
+  bottom: "0.8em",
+  width: "2px",
+  background: "#24422A",
+  zIndex: 0,
+}));
+
+export const RouteBullet = styled.span(() => ({
+  display: "inline-block",
+  minWidth: "12px",
+  minHeight: "12px",
+  borderRadius: "50%",
+  background: "#24422A",
+  marginRight: "8px",
+  position: "relative",
+  zIndex: 2,
+}));
+
+export const RouteFeatures = styled.p((props) => ({
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  backgroundColor: props.theme.colors.tertiary,
+  border: `2px solid ${props.theme.colors.senary}`,
+  color: props.theme.colors.senary,
+  borderRadius: "5px",
+  margin: "0",
+  marginTop: "1rem",
+  padding: "0.4rem",
+  fontWeight: "900",
+  fontSize: "0.9rem",
 }));
 
 export const CardState = styled.div(() => ({

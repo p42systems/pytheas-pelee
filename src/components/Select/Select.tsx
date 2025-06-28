@@ -11,22 +11,35 @@ import {
   SelectCheckbox,
   SelectCheckboxLabel,
   TourSelectButton,
+  SelectRouteCardContainer,
+  RouteList,
+  RouteListItem,
+  RouteListLink,
+  RouteLine,
+  RouteBullet,
+  RouteFeatures,
 } from "../styled_components";
-import SelectCard from "./SelectCard";
-import { featureFiltersAtom, allMarkersQueryAtom } from "../../atoms";
+// import SelectCard from "./SelectCard";
+import {
+  featureFiltersAtom,
+  allMarkersQueryAtom,
+  routesQueryAtom,
+} from "../../atoms";
 import { back } from "../../services/navigation";
 
 function Select() {
-  const { markers } = useAtomValue(allMarkersQueryAtom);
+  // const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const [, setLocation] = useLocation();
   const filtersAtomValue = useAtomValue(featureFiltersAtom);
   const [filters, setFilters] = useState({ ...filtersAtomValue });
 
+  const routesAtomValue = useAtomValue(routesQueryAtom);
+  const { routes } = routesAtomValue;
+
   const handleChange =
     (feature: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setFilters({ ...filters, [feature]: e.target.checked });
-      console.log(filters);
     };
 
   const featuresList = {
@@ -34,47 +47,6 @@ function Select() {
     beach: "Beaches",
   };
 
-  const routes = [
-    {
-      id: "route1",
-      name: "Route 1",
-      stops: [
-        { id: "stop1", name: "Stop 1" },
-        { id: "picnicSite", name: "Picnic Site" },
-        { id: "stop3", name: "Stop 3" },
-        { id: "beach", name: "Beach" },
-        { id: "stop5", name: "Stop 5" },
-      ],
-      features: ["picnic", "beach", "attraction"],
-    },
-    {
-      id: "route2",
-      name: "Route 2",
-      stops: [
-        { id: "stop1", name: "Stop 1" },
-        { id: "restaurant", name: "Restaurant" },
-        { id: "stop3", name: "Stop 3" },
-        { id: "beach", name: "Beach" },
-        { id: "stop6", name: "Stop 6" },
-      ],
-      features: ["restaurants", "beach", "attraction"],
-    },
-    {
-      id: "route3",
-      name: "Route 3",
-      stops: [
-        { id: "stop1", name: "Stop 1" },
-        { id: "picnic", name: "Picnic Site" },
-        { id: "stop3", name: "Stop 3" },
-        { id: "stop4", name: "Stop 4" },
-        { id: "restaurant", name: "Restaurant" },
-      ],
-      features: ["restaurants", "picnic", "attraction"],
-    }
-    // Add more routes as needed
-  ];
-
-  // Filter routes based on selected features in filters
   const filteredRoutes = routes.filter((route) =>
     Object.entries(filters)
       .filter(([_, checked]) => checked)
@@ -94,9 +66,7 @@ function Select() {
       </Header>
       <MainContainer>
         <h2>Select your route</h2>
-        <p>
-          Filter different routes by the features you would like to be included:
-        </p>
+        <p>Must include:</p>
         <div
           style={{
             minWidth: "90%",
@@ -119,43 +89,46 @@ function Select() {
         </div>
         <SelectionsContainer>
           {filteredRoutes.map((route) => (
-            <div
-              key={route.id}
-              style={{
-                border: "2px solid #24422A",
-                padding: "1rem",
-                borderRadius: "5px",
-                backgroundColor: "#CE8751",
-                margin: "0.5rem",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-              }}
-            >
-              <h3>{route.name}</h3>
-              <ul style={{ paddingLeft: "15px" }}>
-                {route.stops.map((stop) => (
-                  <li key={stop.id}>{stop.name}</li>
+            <SelectRouteCardContainer key={route.id}>
+              <h3 style={{ fontSize: "1.2rem" }}>{route.name}</h3>
+              <RouteList>
+                <RouteLine />
+                {route.stops.map((stop, index) => (
+                  <RouteListItem key={stop.id}>
+                    <RouteBullet />
+                    <RouteListLink href={`./tour/details/${stop.id}`}>
+                      {stop.name}
+                    </RouteListLink>
+                  </RouteListItem>
                 ))}
-              </ul>
-              <p>
-                {route.features.includes("picnic") ? "Picnic site | " : ""}
-                {route.features.includes("beach") ? "Beach | " : ""}
-                {route.features.includes("restaurants") ? "Restaurants | " : ""}
-                {route.features.includes("attraction") ? "Attractions" : ""}
-              </p>
-              <TourSelectButton
-                title="Start Tour"
-                aria-label="Start Tour"
-                tabIndex={0}
-                // onClick={() => {
-                //   loadTour(sequence, setTourPreference, setLocation);
-                // }}
+              </RouteList>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "stretch",
+                }}
               >
-                Start Tour
-              </TourSelectButton>
-            </div>
+                <RouteFeatures>
+                  {route.features.includes("picnic") ? "Picnic site | " : ""}
+                  {route.features.includes("beach") ? "Beach | " : ""}
+                  {route.features.includes("restaurants")
+                    ? "Restaurants | "
+                    : ""}
+                  {route.features.includes("attraction") ? "Attractions" : ""}
+                </RouteFeatures>
+                <TourSelectButton
+                  title="Start Tour"
+                  aria-label="Start Tour"
+                  tabIndex={0}
+                  // onClick={() => {
+                  //   loadTour(sequence, setTourPreference, setLocation);
+                  // }}
+                >
+                  Start Tour
+                </TourSelectButton>
+              </div>
+            </SelectRouteCardContainer>
           ))}
           {filteredRoutes.length === 0 && (
             <div
