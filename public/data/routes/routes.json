@@ -1,128 +1,119 @@
 {
-      id: "route1",
-      name: "Essex-Kent Conservation Areas",
-      stops: [
-        { id: "p1att", name: "Kopegaron Woods Conservation Area" },
-        { id: "p10pic", name: "Hillman Marsh Conservation Area" },
-        { id: "p4mus", name: "Essex Kent Mennonite Historical Society" },
-        { id: "p9park", name: "Mersea Park"}
+  "routes": [
+    {
+      "id": "route1",
+      "name": "Essex-Kent Conservation Areas",
+      "stops": [
+        { "id": "p1att", "name": "Kopegaron Woods Conservation Area" },
+        { "id": "p10pic", "name": "Hillman Marsh Conservation Area" },
+        { "id": "p4mus", "name": "Essex Kent Mennonite Historical Society" },
+        { "id": "p9park", "name": "Mersea Park"}
       ],
-      features: ["attraction"],
+      "features": ["attraction"]
     },
     {
-      id: "route2",
-      name: "Leamington Focus",
-      stops: [
-        { id: "p3mus", name: "Leamington Arts Centre" },
-        { id: "p4mus", name: "Essex Kent Mennonite Historical Society" },
-        { id: "p5park", name: "Seacliffe Park" },
-        { id: "p7poi", name: "Waterfront Promenade" },
-        { id: "p6park", name: "Rick Atkin Park" },
+      "id": "route2",
+      "name": "Leamington Focus",
+      "stops": [
+        { "id": "p3mus", "name": "Leamington Arts Centre" },
+        { "id": "p4mus", "name": "Essex Kent Mennonite Historical Society" },
+        { "id": "p5park", "name": "Seacliffe Park" },
+        { "id": "p7poi", "name": "Waterfront Promenade" },
+        { "id": "p6park", "name": "Rick Atkin Park" }
       ],
-      features: ["attraction"],
+      "features": ["attraction"]
     },
     {
-      id: "route3",
-      name: "Northwest Beach",
-      stops: [
-      {id:"p10inf", name:"Park Orientation"},
-      {id:"p11vie", name:"Viewpoint"},
-      {id:"p12att", name:"Sanctuary" },
-      {id:"p56poi", name:"Northwest Beach"}
+      "id": "route3",
+      "name": "Northwest Beach",
+      "stops": [
+      {"id":"p10inf", "name":"Park Orientation"},
+      {"id":"p11vie", "name":"Viewpoint"},
+      {"id":"p12att", "name":"Sanctuary" },
+      {"id":"p56poi", "name":"Northwest Beach"}
       ],
-      features: ["attraction","beach"]
+      "features": ["attraction","beach"]
     },
     {
-      id: "route4",
-      name: "Marsh and Northwest Beach",
-      stops: [
-      {id:"p14vie", name:"Marsh Tower"},
-      {id:"p16poi", name:"Marsh Boardwalk"},
-      {id:"p12att", name:"Picnic Site" },
-      {id:"p56poi", name:"Northwest Beach"}
+      "id": "route4",
+      "name": "Marsh and Northwest Beach",
+      "stops": [
+      {"id":"p14vie", "name":"Marsh Tower"},
+      {"id":"p16poi", "name":"Marsh Boardwalk"},
+      {"id":"p12att", "name":"Picnic Site" },
+      {"id":"p56poi", "name":"Northwest Beach"}
       ],
-      features: ["attraction","picnic","beach"]
+      "features": ["attraction","picnic","beach"]
     },
         {
-      id: "route5",
-      name: "Marsh and Black Willow Beach",
-      stops: [
-      {id:"p11vie", name:"Viewpoint"},
-      {id:"p14vie", name:"Marsh Tower"},
-      {id:"p16poi", name:"Marsh Boardwalk"},
-      {id:"p17pic", name:"Picnic Site" },
-      {id:"p58poi", name:"Black Willow Beach"}
+      "id": "route5",
+      "name": "Marsh and Black Willow Beach",
+      "stops": [
+      {"id":"p11vie", "name":"Viewpoint"},
+      {"id":"p14vie", "name":"Marsh Tower"},
+      {"id":"p16poi", "name":"Marsh Boardwalk"},
+      {"id":"p17pic", "name":"Picnic Site" },
+      {"id":"p58poi", "name":"Black Willow Beach"}
       ],
-      features: ["attraction","picnic","beach"]
+      "features": ["attraction","picnic","beach"]
     },
         {
-      id: "route6",
-      name: "Delaurier Homestead",
-      stops: [
-      {id:"p19att", name:"Delaurier Homedtead"},
-      {id:"p22vie", name:"Boardwalk Viewpoint"},
-      {id:"p20pic", name:"Picnic Site"},
-      {id:"p61poi", name:"Point Pelee Cemetary" }
+      "id": "route6",
+      "name": "Delaurier Homestead",
+      "stops": [
+      {"id":"p19att", "name":"Delaurier Homedtead"},
+      {"id":"p22vie", "name":"Boardwalk Viewpoint"},
+      {"id":"p20pic", "name":"Picnic Site"},
+      {"id":"p61poi", "name":"Point Pelee Cemetary" }
       ],
-      features: ["attraction"],["picnic"]
+      "features": ["attraction","picnic"]
     },
             {
-      id: "route7",
-      name: "Intrepretive Centres and East Beach",
-      stops: [
-      {id:"p19att", name:"Delaurier Homedtead"},
-      {id:"p50poi", name:"Point Pelee National Park Visitor Centre"},
-      {id:"p59poi", name:"East Beach (South)"}
+      "id": "route7",
+      "name": "Intrepretive Centres and East Beach",
+      "stops": [
+      {"id":"p19att", "name":"Delaurier Homedtead"},
+      {"id":"p50poi", "name":"Point Pelee National Park Visitor Centre"},
+      {"id":"p59poi", "name":"East Beach (South)"}
       ],
-      features: ["attraction"],["beach"]
+      "features": ["attraction","beach"]
     },
     {
-      id: "route8",
-      name: "Visitor Centre and Tip",
-      stops: [
-      {id:"p50poi", name:"Point Pelee National Park Visitor Centre"},
-      {id:"p62poi", name:"Tip Trolley Terminus"},
-      {id:"p63poi", name:"Tip Trolley Stop"},
-      {id:"p51poi", name:"Point Pelee Tip Tower" },
-      {id:"p53poi", name:"42 Sign",
-      {id:"p55poi", name:"Point Pelee Tip"}}
+      "id": "route8",
+      "name": "Visitor Centre and Tip",
+      "stops": [
+      {"id":"p50poi", "name":"Point Pelee National Park Visitor Centre"},
+      {"id":"p62poi", "name":"Tip Trolley Terminus"},
+      {"id":"p63poi", "name":"Tip Trolley Stop"},
+      {"id":"p51poi", "name":"Point Pelee Tip Tower" },
+      {"id":"p53poi", "name":"42 Sign"},
+      {"id":"p55poi", "name":"Point Pelee Tip"}
       ],
-      features: ["attraction"],
+      "features": ["attraction"]
     },
     {
-      id: "route8",
-      name: "Visitor Centre and Tip",
-      stops: [
-      {id:"p50poi", name:"Point Pelee National Park Visitor Centre"},
-      {id:"p62poi", name:"Tip Trolley Terminus"},
-      {id:"p63poi", name:"Tip Trolley Stop"},
-      {id:"p51poi", name:"Point Pelee Tip Tower" },
-      {id:"p53poi", name:"42 Sign",
-      {id:"p55poi", name:"Point Pelee Tip"}}
+      "id": "route9",
+      "name": "West Side Trails",
+      "stops": [
+      {"id":"p12att", "name":"Sanctuary"},
+      {"id":"p56poi", "name":"Northwest Beach"},
+      {"id":"p17pic", "name":"Dunes"},
+      {"id":"p18pic", "name":"Sleepy Hollow" },
+      {"id":"p58poi", "name":"Black Willow Beach"},
+      {"id":"p60poi", "name":"West Beach"},
+      {"id":"p55poi", "name":"Point Pelee Tip"}
       ],
-      features: ["attraction"],
+      "features": ["attraction","picnic","beach"]
     },
     {
-      id: "route9",
-      name: "West Side Trails",
-      stops: [
-      {id:"p12att", name:"Sanctuary"},
-      {id:"p56poi", name:"Northwest Beach"},
-      {id:"p17pic", name:"Dunes"},
-      {id:"p18pic", name:"Sleepy Hollow" },
-      {id:"p58poi", name:"Black Willow Beach",
-      {id:"p60poi", name:"West Beach"}},
-      {id:"p55poi", name:"Point Pelee Tip"}
+      "id": "route10",
+      "name": "Paddle to East Beach",
+      "stops": [
+      {"id":"p14vie", "name":"Marsh Tower"},
+      {"id":"p16poi", "name":"Marsh Boardwalk / Wings"},
+      {"id":"p57poi", "name":"East Beach (North)"}
       ],
-      features: ["attraction","picnic","beach"]
-    },
-    {
-      id: "route10",
-      name: "Paddle to East Beach",
-      stops: [
-      {id:"p14vie", name:"Marsh Tower"},
-      {id:"p16poi", name:"Marsh Boardwalk / Wings"},
-      {id:"p57poi", name:"East Beach (North)"},
-      ],
-      features: ["attraction","beach"]
-    },
+      "features": ["attraction","beach"]
+    }
+  ]
+}
