@@ -10,6 +10,7 @@ import { viewControllerMachine } from "./machines/viewController";
 import { IMarker, TourStates, MarkerProgress, IMapIcons } from "./types";
 import { FeatureCollection } from "geojson";
 import { fetchRoute } from "./services/route";
+import { fetchRoutes } from "./services/routes";
 import { fetchMarkerDetails, fetchMarkers } from "./services/markers";
 import { fetchBoundingBox } from "./services/boundingBoxServices";
 import { tourInstructions, sponsors, about } from "./services/copy";
@@ -280,6 +281,21 @@ export const refetchDirectionQueryAtom = atom(null, (_get, set) =>
 export const loadableDirectionQueryAtom = loadable(directionQueryAtom);
 
 /*********************************
+ * Routes Query
+ *********************************/
+
+export const routesQueryAtom = atomWithQuery<
+  ReturnType<typeof fetchRoutes>,
+  unknown
+>(() => ({
+  queryKey: ["routes"],
+  queryFn: async () => {
+    console.log(fetchRoutes());
+    return fetchRoutes();
+  },
+}));
+
+/*********************************
  * Markers Query
  *********************************/
 
@@ -290,7 +306,6 @@ export const markersQueryAtom = atomWithQuery<
   queryKey: ["markers"],
   queryFn: async () => {
     const tourPreference = get(tourPreferenceAtom);
-    console.log(fetchMarkers(tourPreference));
     return fetchMarkers(tourPreference);
   },
 }));
@@ -387,12 +402,11 @@ export const fullTourAtom: PrimitiveAtom<string> = atom("full");
 
 export const tourPreferenceAtom: PrimitiveAtom<string> = atom("full");
 
-export const featureFiltersAtom: PrimitiveAtom<{ [key: string]: boolean }> =
-  atom({
-    picnic: false,
-    beach: false,
-    attraction: true,
-  });
+export const featureFiltersAtom = atom({
+  picnic: false,
+  beach: false,
+  attraction: true,
+});
 
 /*********************************
  * Copy Query / Atoms
