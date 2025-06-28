@@ -168,9 +168,10 @@ export const CardsContainer = styled.div(() => ({
   alignItems: "center",
   justifyContent: "center",
   margin: 0,
+  marginBottom: "1.5rem",
   padding: 0,
   flexGrow: 1,
-  flexShrink: 1,
+  flexShrink: 1
 }));
 
 export const ListParagraph = styled.p(() => ({

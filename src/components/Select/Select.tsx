@@ -10,6 +10,7 @@ import {
   SelectionsContainer,
   SelectCheckbox,
   SelectCheckboxLabel,
+  TourSelectButton,
 } from "../styled_components";
 import SelectCard from "./SelectCard";
 import { featureFiltersAtom, allMarkersQueryAtom } from "../../atoms";
@@ -19,7 +20,8 @@ function Select() {
   const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const [, setLocation] = useLocation();
-  const [filters, setFilters] = useState({ ...featureFiltersAtom });
+  const filtersAtomValue = useAtomValue(featureFiltersAtom);
+  const [filters, setFilters] = useState({ ...filtersAtomValue });
 
   const handleChange =
     (feature: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,24 +30,56 @@ function Select() {
     };
 
   const featuresList = {
-    attraction: "Attractions",
     picnic: "Picnic sites",
     beach: "Beaches",
-    restaurants: "Restaurants",
   };
 
-  // const filterMarkersByType = (type: string) =>
-  //   Object.entries(markers)
-  //     .filter(([_, marker]) => marker.type === type)
-  //     .reduce((acc, [key, marker]) => {
-  //       acc[key] = marker;
-  //       return acc;
-  //     }, {} as Record<string, typeof markers[keyof typeof markers]>);
+  const routes = [
+    {
+      id: "route1",
+      name: "Route 1",
+      stops: [
+        { id: "stop1", name: "Stop 1" },
+        { id: "picnicSite", name: "Picnic Site" },
+        { id: "stop3", name: "Stop 3" },
+        { id: "beach", name: "Beach" },
+        { id: "stop5", name: "Stop 5" },
+      ],
+      features: ["picnic", "beach", "attraction"],
+    },
+    {
+      id: "route2",
+      name: "Route 2",
+      stops: [
+        { id: "stop1", name: "Stop 1" },
+        { id: "restaurant", name: "Restaurant" },
+        { id: "stop3", name: "Stop 3" },
+        { id: "beach", name: "Beach" },
+        { id: "stop6", name: "Stop 6" },
+      ],
+      features: ["restaurants", "beach", "attraction"],
+    },
+    {
+      id: "route3",
+      name: "Route 3",
+      stops: [
+        { id: "stop1", name: "Stop 1" },
+        { id: "picnic", name: "Picnic Site" },
+        { id: "stop3", name: "Stop 3" },
+        { id: "stop4", name: "Stop 4" },
+        { id: "restaurant", name: "Restaurant" },
+      ],
+      features: ["restaurants", "picnic", "attraction"],
+    }
+    // Add more routes as needed
+  ];
 
-  // const attractions = filterMarkersByType("attraction");
-  // const picnicSites = filterMarkersByType("picnic");
-  // const beaches = filterMarkersByType("beach");
-  // const restaurants = filterMarkersByType("restaurant");
+  // Filter routes based on selected features in filters
+  const filteredRoutes = routes.filter((route) =>
+    Object.entries(filters)
+      .filter(([_, checked]) => checked)
+      .every(([feature]) => route.features.includes(feature))
+  );
 
   return (
     <>
@@ -76,15 +110,80 @@ function Select() {
               <SelectCheckbox
                 type="checkbox"
                 name={key}
-                key={key}
-                checked={filters[key] || false}
+                checked={filters[key] ?? filtersAtomValue[key] ?? false}
                 onChange={handleChange(key)}
               />
               {value}
             </SelectCheckboxLabel>
           ))}
         </div>
-        <SelectionsContainer></SelectionsContainer>
+        <SelectionsContainer>
+          {filteredRoutes.map((route) => (
+            <div
+              key={route.id}
+              style={{
+                border: "2px solid #24422A",
+                padding: "1rem",
+                borderRadius: "5px",
+                backgroundColor: "#CE8751",
+                margin: "0.5rem",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+              }}
+            >
+              <h3>{route.name}</h3>
+              <ul style={{ paddingLeft: "15px" }}>
+                {route.stops.map((stop) => (
+                  <li key={stop.id}>{stop.name}</li>
+                ))}
+              </ul>
+              <p>
+                {route.features.includes("picnic") ? "Picnic site | " : ""}
+                {route.features.includes("beach") ? "Beach | " : ""}
+                {route.features.includes("restaurants") ? "Restaurants | " : ""}
+                {route.features.includes("attraction") ? "Attractions" : ""}
+              </p>
+              <TourSelectButton
+                title="Start Tour"
+                aria-label="Start Tour"
+                tabIndex={0}
+                // onClick={() => {
+                //   loadTour(sequence, setTourPreference, setLocation);
+                // }}
+              >
+                Start Tour
+              </TourSelectButton>
+            </div>
+          ))}
+          {filteredRoutes.length === 0 && (
+            <div
+              style={{ padding: "1rem", color: "#24422A", fontWeight: "bold" }}
+            >
+              No routes match the selected filters.
+            </div>
+          )}
+
+          {/* <div
+            style={{
+              border: "2px solid #24422A",
+              padding: "1rem",
+              borderRadius: "5px",
+              backgroundColor: "#CE8751",
+            }}
+          >
+            <h3>Route 1</h3>
+            <ul style={{ paddingLeft: "15px" }}>
+              <li>Stop 1</li>
+              <li>Picnic site</li>
+              <li>Stop 3</li>
+              <li>Beach</li>
+              <li>Stop 5</li>
+            </ul>
+            <p>Picnic site | Beach</p>
+          </div> */}
+        </SelectionsContainer>
       </MainContainer>
       <Footer />
     </>

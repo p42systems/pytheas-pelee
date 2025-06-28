@@ -388,7 +388,11 @@ export const fullTourAtom: PrimitiveAtom<string> = atom("full");
 export const tourPreferenceAtom: PrimitiveAtom<string> = atom("full");
 
 export const featureFiltersAtom: PrimitiveAtom<{ [key: string]: boolean }> =
-  atom({});
+  atom({
+    picnic: false,
+    beach: false,
+    attraction: true,
+  });
 
 /*********************************
  * Copy Query / Atoms

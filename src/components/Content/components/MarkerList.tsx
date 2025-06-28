@@ -53,7 +53,7 @@ function MarkerList() {
           />
         ))}
       </CardsContainer>
-
+      
       <h2>Beaches</h2>
       <CardsContainer
         ref={scrollableRef}
