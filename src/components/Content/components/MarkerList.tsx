@@ -3,9 +3,9 @@ import { useCallback } from "react";
 import useMeasure from "react-use-measure";
 import { ResizeObserver } from "@juggle/resize-observer";
 
-import { CardsContainer } from "../../styled_components";
+import { CardsContainer, ContentSubHeader } from "../../styled_components";
 import MarkerCard from "./MarkerCard";
-import { lastViewedMarkerIdAtom, markersQueryAtom } from "../../../atoms";
+import { lastViewedMarkerIdAtom, allMarkersQueryAtom } from "../../../atoms";
 
 function MarkerList() {
   const lastViewedMarker = useAtomValue(lastViewedMarkerIdAtom);
@@ -22,7 +22,7 @@ function MarkerList() {
     [scrollableBounds]
   );
 
-  const { markers, order } = useAtomValue(markersQueryAtom);
+  const { markers, order } = useAtomValue(allMarkersQueryAtom);
 
   const filterMarkersByType = (type: string) =>
     Object.entries(markers)
@@ -39,7 +39,7 @@ function MarkerList() {
 
   return (
     <>
-      <h2>Picnic Sites</h2>
+      <ContentSubHeader>Picnic Sites</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with picnic sites"
@@ -54,7 +54,7 @@ function MarkerList() {
         ))}
       </CardsContainer>
       
-      <h2>Beaches</h2>
+      <ContentSubHeader>Beaches</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with beaches"
@@ -69,7 +69,7 @@ function MarkerList() {
         ))}
       </CardsContainer>
 
-      <h2>Attractions</h2>
+      <ContentSubHeader>Attractions</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with attractions"
@@ -84,7 +84,7 @@ function MarkerList() {
         ))}
       </CardsContainer>
 
-      <h2>Restaurants</h2>
+      <ContentSubHeader>Restaurants</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with restaurants"

@@ -1,11 +1,9 @@
 import { useLocation } from "wouter";
 import {
+  NavigationSelectButton,
   NavigationButtonsContainer,
   NavigationContentButton,
 } from "../../../styled_components";
-
-import MultipleTours from "./components/MultipleTours";
-import SingleTour from "./components/SingleTour";
 
 function NavigationButtons() {
   const [, setLocation] = useLocation();
@@ -21,7 +19,15 @@ function NavigationButtons() {
       >
         Content
       </NavigationContentButton>
-      <SingleTour />
+      <NavigationSelectButton
+        title="Select"
+        aria-label="Select"
+        onClick={() => {
+          setLocation("/select");
+        }}
+      >
+        Select Route
+      </NavigationSelectButton>
     </NavigationButtonsContainer>
   );
 }

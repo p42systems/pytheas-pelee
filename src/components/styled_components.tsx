@@ -54,11 +54,9 @@ export const ListMainContainer = styled.main(() => ({
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: "100%",
-  "@media screen and (min-width: 1028px)": {
-    width: "1028px",
-  },
-  "@media screen and (max-width: 800px)": {
-    width: "100vw",
+  maxWidth: "1080px",
+  "@media screen and (max-width: 1200px)": {
+    width: "95vw",
   },
   minWidth: "375px",
 }));
@@ -96,13 +94,13 @@ export const SelectionsContainer = styled.article((props) => ({
   alignItems: "stretch",
   justifyContent: "center",
   minHeight: "250px",
-  maxWidth: "100%",
+  maxWidth: "90%",
   border: `2px solid ${props.theme.colors.primary}`,
   borderRadius: "5px",
-  margin: "0.5rem 0",
+  margin: "0.5rem auto",
   marginBottom: "3rem",
   padding: "1rem",
-  backgroundColor: props.theme.colors.primary + `88`,
+  backgroundColor: props.theme.colors.tertiary + `44`,
 }));
 
 export const Button = styled.button((props) => ({
@@ -219,18 +217,22 @@ export const SelectRouteCardContainer = styled.article((props) => ({
   margin: "0.5rem",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
+  minHeight: "100%",
+  justifyContent: "flex-start",
   alignItems: "stretch",
+  "@media screen and (max-width: 970px)": {
+    width: "95%",
+  },
 }));
 
 export const RouteList = styled.ul(() => ({
   display: "flex",
   flexDirection: "column",
   paddingLeft: "0",
-  margin: "1rem 0",
+  margin: "0.5rem 0",
   listStyle: "none",
   position: "relative",
-  gap: "1rem",
+  gap: "1.5rem",
 }));
 
 export const RouteListItem = styled.li(() => ({
@@ -285,6 +287,14 @@ export const RouteFeatures = styled.p((props) => ({
   fontSize: "0.9rem",
 }));
 
+export const RouteImage = styled.img(() => ({
+  height: "175px",
+  width: "calc(100% + 32px)",
+  marginLeft: "-16px",
+  marginTop: "-16px",
+  objectFit: "cover",
+}));
+
 export const CardState = styled.div(() => ({
   position: "absolute",
   right: 0,
@@ -336,6 +346,14 @@ export const CardButtons = styled.div(() => ({
   display: "flex",
   justifyContent: "space-evenly",
   padding: "1rem",
+}));
+
+export const PageHeader = styled.h2(() => ({
+  textAlign: "left",
+  margin: "0.5rem 0",
+  "@media screen and (max-width: 600px)": {
+    textAlign: "center",
+  },
 }));
 
 export const CardHeader = styled.h2(() => ({
@@ -448,6 +466,16 @@ export const AboutAnchorHeader = styled.h2((props) => ({
 }));
 
 export const HomeSubHeader = styled.h2((props) => ({
+  padding: "0 0 0 1rem",
+  margin: "2rem 0 0.25rem 0",
+  fontSize: "1.25rem",
+  color: props.theme.colors.primary,
+  "@media screen and (max-width: 600px)": {
+    textAlign: "center",
+  },
+}));
+
+export const ContentSubHeader = styled.h3((props) => ({
   padding: "0 0 0 1rem",
   margin: "2rem 0 0.25rem 0",
   fontSize: "1.25rem",
@@ -1277,6 +1305,11 @@ export const NavigationContentButton = styled(NavigationButton)((props) => ({
 }));
 
 export const NavigationTourButton = styled(NavigationButton)((props) => ({
+  backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
+}));
+
+export const NavigationSelectButton = styled(NavigationButton)((props) => ({
   backgroundColor: props.theme.colors.tertiary,
   color: props.theme.colors.secondary,
 }));

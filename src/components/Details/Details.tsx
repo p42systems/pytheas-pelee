@@ -2,7 +2,7 @@ import { useAtomValue } from "jotai";
 import { Redirect } from "wouter";
 
 import { MainContainer, SectionContentContainer } from "../styled_components";
-import { detailsQueryAtom, markersQueryAtom } from "../../atoms";
+import { detailsQueryAtom, allMarkersQueryAtom } from "../../atoms";
 import Header from "../General/Header";
 import Footer from "../General/Footer";
 import Media from "./components/Media/Media";
@@ -12,7 +12,7 @@ import DetailsSubHeader from "./components/DetailsSubHeader/DetailsSubHeader";
 
 function Details() {
   const detail = useAtomValue(detailsQueryAtom);
-  const { markers } = useAtomValue(markersQueryAtom);
+  const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const marker = markers[detail.id];
 

@@ -5,14 +5,14 @@ import { useAtomValue } from "jotai";
 import {
   baseIconConfigAtom,
   detailsQueryAtom,
-  markersQueryAtom,
+  allMarkersQueryAtom,
 } from "../../../atoms";
 import { icon } from "leaflet";
 import { interactionOptions } from "../../../services/cards";
 
 function SmallMap() {
   const detail = useAtomValue(detailsQueryAtom);
-  const { markers } = useAtomValue(markersQueryAtom);
+  const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const marker = markers[detail.id];
 

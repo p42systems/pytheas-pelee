@@ -100,7 +100,7 @@ function MarkerCard({ marker, selected, shouldScroll }: MarkerListItemProps) {
         >
           View
         </ViewCardButton>
-        <TourCardButton
+        {/* <TourCardButton
           aria-label={`View ${marker.name} in the tour`}
           title={`View ${marker.name} in the tour`}
           tabIndex={0}
@@ -110,7 +110,7 @@ function MarkerCard({ marker, selected, shouldScroll }: MarkerListItemProps) {
           }}
         >
           Take Tour
-        </TourCardButton>
+        </TourCardButton> */}
       </CardContent>
     </CardContainer>
   );

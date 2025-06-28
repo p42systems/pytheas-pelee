@@ -1,17 +1,21 @@
 import { useLocation } from "wouter";
 import React, { useState } from "react";
-import { useAtomValue } from "jotai";
+import { useAtomValue, useSetAtom } from "jotai";
 import Header from "../General/Header";
 import Footer from "../General/Footer";
 
 import {
-  MainContainer,
+  PageHeader,
+  ListMainContainer,
   BackButton,
   SelectionsContainer,
   SelectCheckbox,
   SelectCheckboxLabel,
   TourSelectButton,
+  ListParagraph,
+  StaticheaderBackgroundButton,
   SelectRouteCardContainer,
+  RouteImage,
   RouteList,
   RouteListItem,
   RouteListLink,
@@ -19,23 +23,22 @@ import {
   RouteBullet,
   RouteFeatures,
 } from "../styled_components";
-// import SelectCard from "./SelectCard";
 import {
   featureFiltersAtom,
   allMarkersQueryAtom,
   routesQueryAtom,
+  tourPreferenceAtom,
 } from "../../atoms";
-import { back } from "../../services/navigation";
+import { back, loadTour } from "../../services/navigation";
 
 function Select() {
-  // const { markers } = useAtomValue(allMarkersQueryAtom);
-
   const [, setLocation] = useLocation();
   const filtersAtomValue = useAtomValue(featureFiltersAtom);
   const [filters, setFilters] = useState({ ...filtersAtomValue });
-
+  const setTourPreference = useSetAtom(tourPreferenceAtom);
   const routesAtomValue = useAtomValue(routesQueryAtom);
   const { routes } = routesAtomValue;
+  const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const handleChange =
     (feature: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,11 +46,25 @@ function Select() {
     };
 
   const featuresList = {
-    picnic: "Picnic sites",
-    beach: "Beaches",
+    picnic: "Picnic site",
+    beach: "Beach",
   };
 
-  const filteredRoutes = routes.filter((route) =>
+  const routesWithImages = routes.map((route) => {
+    const firstStop =
+      route.stops && route.stops.length > 0 ? route.stops[0] : null;
+    const marker =
+      firstStop && markers && markers[firstStop.id]
+        ? markers[firstStop.id]
+        : null;
+    return {
+      ...route,
+      firstStopImage: marker && marker.image ? marker.image : null,
+      firstStopImageAlt: marker && marker.imageAlt ? marker.imageAlt : null,
+    };
+  });
+
+  const filteredRoutes = routesWithImages.filter((route) =>
     Object.entries(filters)
       .filter(([_, checked]) => checked)
       .every(([feature]) => route.features.includes(feature))
@@ -64,36 +81,58 @@ function Select() {
           Back
         </BackButton>
       </Header>
-      <MainContainer>
-        <h2>Select your route</h2>
-        <p>Must include:</p>
-        <div
-          style={{
-            minWidth: "90%",
-            marginBottom: "1rem",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          {Object.entries(featuresList).map(([key, value]) => (
-            <SelectCheckboxLabel key={key}>
-              <SelectCheckbox
-                type="checkbox"
-                name={key}
-                checked={filters[key] ?? filtersAtomValue[key] ?? false}
-                onChange={handleChange(key)}
-              />
-              {value}
-            </SelectCheckboxLabel>
-          ))}
-        </div>
+      <ListMainContainer>
+        <PageHeader>Select your route</PageHeader>
+        <ListParagraph>
+          Welcome to the route selection page. We have curated a variety of
+          routes offering the best of Point Pelee and Leamington. You can filter
+          for routes featuring picnic sites and/or beaches using the checkboxes
+          below. Click on any of the stops to view more information, and when
+          you are ready to begin the tour, click the{" "}
+          <StaticheaderBackgroundButton>
+            Start Tour
+          </StaticheaderBackgroundButton>
+          button and it will instruct you as to where to start.
+        </ListParagraph>
         <SelectionsContainer>
+          <div
+            style={{
+              width: "95%",
+              marginBottom: "0.25rem",
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+            }}
+          >
+            <p
+              style={{
+                fontWeight: "600",
+              }}
+            >
+              Must include:
+            </p>
+            {Object.entries(featuresList).map(([key, value]) => (
+              <SelectCheckboxLabel key={key}>
+                <SelectCheckbox
+                  type="checkbox"
+                  name={key}
+                  checked={filters[key] ?? filtersAtomValue[key] ?? false}
+                  onChange={handleChange(key)}
+                />
+                {value}
+              </SelectCheckboxLabel>
+            ))}
+          </div>
           {filteredRoutes.map((route) => (
             <SelectRouteCardContainer key={route.id}>
+              <RouteImage
+                src={route.firstStopImage ? route.firstStopImage : ""}
+                alt={route.firstStopImageAlt ? route.firstStopImageAlt : ""}
+              />
               <h3 style={{ fontSize: "1.2rem" }}>{route.name}</h3>
               <RouteList>
                 <RouteLine />
-                {route.stops.map((stop, index) => (
+                {route.stops.map((stop) => (
                   <RouteListItem key={stop.id}>
                     <RouteBullet />
                     <RouteListLink href={`./tour/details/${stop.id}`}>
@@ -107,6 +146,7 @@ function Select() {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "stretch",
+                  marginTop: "auto",
                 }}
               >
                 <RouteFeatures>
@@ -121,9 +161,9 @@ function Select() {
                   title="Start Tour"
                   aria-label="Start Tour"
                   tabIndex={0}
-                  // onClick={() => {
-                  //   loadTour(sequence, setTourPreference, setLocation);
-                  // }}
+                  onClick={() => {
+                    loadTour(route.id, setTourPreference, setLocation);
+                  }}
                 >
                   Start Tour
                 </TourSelectButton>
@@ -137,27 +177,8 @@ function Select() {
               No routes match the selected filters.
             </div>
           )}
-
-          {/* <div
-            style={{
-              border: "2px solid #24422A",
-              padding: "1rem",
-              borderRadius: "5px",
-              backgroundColor: "#CE8751",
-            }}
-          >
-            <h3>Route 1</h3>
-            <ul style={{ paddingLeft: "15px" }}>
-              <li>Stop 1</li>
-              <li>Picnic site</li>
-              <li>Stop 3</li>
-              <li>Beach</li>
-              <li>Stop 5</li>
-            </ul>
-            <p>Picnic site | Beach</p>
-          </div> */}
         </SelectionsContainer>
-      </MainContainer>
+      </ListMainContainer>
       <Footer />
     </>
   );

@@ -64,7 +64,7 @@
       {"id":"p19att", "name":"Delaurier Homedtead"},
       {"id":"p22vie", "name":"Boardwalk Viewpoint"},
       {"id":"p20pic", "name":"Picnic Site"},
-      {"id":"p61poi", "name":"Point Pelee Cemetary" }
+      {"id":"p61poi", "name":"Point Pelee Cemetery" }
       ],
       "features": ["attraction","picnic"]
     },

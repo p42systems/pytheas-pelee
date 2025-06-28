@@ -290,7 +290,6 @@ export const routesQueryAtom = atomWithQuery<
 >(() => ({
   queryKey: ["routes"],
   queryFn: async () => {
-    console.log(fetchRoutes());
     return fetchRoutes();
   },
 }));
@@ -372,7 +371,7 @@ export const boundingBoxQueryAtom = atomWithQuery<
   ReturnType<typeof fetchBoundingBox>,
   unknown
 >((get) => {
-  const tourPreference = get(tourPreferenceAtom);
+  const tourPreference = get(fullTourAtom);
 
   let preferredQuery = {
     queryKey: [`${tourPreference}_bounding_box`],

@@ -15,7 +15,7 @@ import { useLocation } from "wouter";
 import {
   detailsQueryAtom,
   getAllMarkerProgressAtom,
-  markersQueryAtom,
+  allMarkersQueryAtom,
 } from "../../../../atoms";
 
 function DetailsSubHeader() {
@@ -23,7 +23,7 @@ function DetailsSubHeader() {
   const markerProgressStates = useAtomValue(getAllMarkerProgressAtom);
 
   const detail = useAtomValue(detailsQueryAtom);
-  const { markers } = useAtomValue(markersQueryAtom);
+  const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const marker = markers[detail.id];
 
