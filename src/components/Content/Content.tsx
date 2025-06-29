@@ -48,8 +48,19 @@ function Content() {
           </a> */}
           . To view the content of any stop, click the{" "}
           <StaticheaderBackgroundButton>View Stop</StaticheaderBackgroundButton>{" "}
-          button. If you are near the site and would like to begin your Point
-          Pelee adventure, click{" "}
+          button. You can also browse the{" "}
+          <a
+            onClick={() => setLocation("/select")}
+            style={{
+              color: "#000",
+              fontWeight: "600",
+              textDecoration: "underline",
+            }}
+          >
+            Route Selection
+          </a>{" "}
+          page to find a route that suits your interests. If you are near the
+          site and would like to begin your Point Pelee adventure, click{" "}
           <StaticheaderBackgroundButton style={{ backgroundColor: "#2b2d42" }}>
             Select Route
           </StaticheaderBackgroundButton>{" "}
