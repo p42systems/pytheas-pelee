@@ -8,6 +8,93 @@
     }
   },
   "features": [
-
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.530818,
+          41.968249
+        ]
+      },
+      "properties": {
+        "longitude": -82.530818,
+        "latitude": 41.968249,
+        "sequence": 140,
+        "imageAlt": "Marsh Tower",
+        "extra": false,
+        "id": "p14vie",
+        "image": "/photos/p14vie.jpg",
+        "address": "",
+        "name": "Marsh Tower",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.530963,
+          41.96753
+        ]
+      },
+      "properties": {
+        "longitude": -82.530963,
+        "latitude": 41.96753,
+        "sequence": 160,
+        "imageAlt": "Marsh Boardwalk / Pelee Wings at the Marsh",
+        "extra": false,
+        "id": "p16poi",
+        "image": "/photos/p16poi.jpg",
+        "address": "Point Pelee Drive 1378",
+        "name": "Marsh Boardwalk / Pelee Wings at the Marsh",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.537441,
+          41.974007
+        ]
+      },
+      "properties": {
+        "longitude": -82.537441,
+        "latitude": 41.974007,
+        "sequence": 120,
+        "imageAlt": "Sanctuary",
+        "extra": true,
+        "id": "p12att",
+        "image": "/photos/p12att.jpg",
+        "address": "",
+        "name": "Sanctuary",
+        "type": "picnic"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.96736409356657,
+        "longitude": -82.53434611228644,
+        "sequence": 165,
+        "imageAlt": "Northwest Beach",
+        "extra": true,
+        "id": "p56poi",
+        "image": "/photos/p56poi.jpg",
+        "address": "",
+        "name": "Northwest Beach",
+        "type": "beach"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.53434611228644,
+          41.96736409356657
+        ],
+        "type": "Point"
+      }
+    }
   ]
 }

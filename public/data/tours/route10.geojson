@@ -8,6 +8,71 @@
     }
   },
   "features": [
-
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.530818,
+          41.968249
+        ]
+      },
+      "properties": {
+        "longitude": -82.530818,
+        "latitude": 41.968249,
+        "sequence": 140,
+        "imageAlt": "Marsh Tower",
+        "extra": false,
+        "id": "p14vie",
+        "image": "/photos/p14vie.jpg",
+        "address": "",
+        "name": "Marsh Tower",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.530963,
+          41.96753
+        ]
+      },
+      "properties": {
+        "longitude": -82.530963,
+        "latitude": 41.96753,
+        "sequence": 160,
+        "imageAlt": "Marsh Boardwalk / Pelee Wings at the Marsh",
+        "extra": false,
+        "id": "p16poi",
+        "image": "/photos/p16poi.jpg",
+        "address": "Point Pelee Drive 1378",
+        "name": "Marsh Boardwalk / Pelee Wings at the Marsh",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.965666196323895,
+        "longitude": -82.50393743159621,
+        "sequence": 167,
+        "imageAlt": "East Beach",
+        "extra": true,
+        "id": "p57poi",
+        "image": "/photos/p57poi.jpg",
+        "address": "",
+        "name": "East Beach",
+        "type": "beach"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.50393743159621,
+          41.965666196323895
+        ],
+        "type": "Point"
+      }
+    }
   ]
 }
