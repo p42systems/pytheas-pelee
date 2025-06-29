@@ -22,7 +22,7 @@ function MarkerList() {
     [scrollableBounds]
   );
 
-  const { markers, order } = useAtomValue(allMarkersQueryAtom);
+  const { markers } = useAtomValue(allMarkersQueryAtom);
 
   const filterMarkersByType = (type: string) =>
     Object.entries(markers)
@@ -35,11 +35,11 @@ function MarkerList() {
   const attractions = filterMarkersByType("attraction");
   const picnicSites = filterMarkersByType("picnic");
   const beaches = filterMarkersByType("beach");
-  const restaurants = filterMarkersByType("restaurant");
+  // const restaurants = filterMarkersByType("restaurant");
 
   return (
     <>
-      <ContentSubHeader>Picnic Sites</ContentSubHeader>
+      <ContentSubHeader id="picnics">Picnic Sites</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with picnic sites"
@@ -53,8 +53,8 @@ function MarkerList() {
           />
         ))}
       </CardsContainer>
-      
-      <ContentSubHeader>Beaches</ContentSubHeader>
+
+      <ContentSubHeader id="beaches">Beaches</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with beaches"
@@ -69,7 +69,7 @@ function MarkerList() {
         ))}
       </CardsContainer>
 
-      <ContentSubHeader>Attractions</ContentSubHeader>
+      <ContentSubHeader id="attractions">Attractions</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with attractions"
@@ -84,7 +84,7 @@ function MarkerList() {
         ))}
       </CardsContainer>
 
-      <ContentSubHeader>Restaurants</ContentSubHeader>
+      {/* <ContentSubHeader id="restaurants">Restaurants</ContentSubHeader>
       <CardsContainer
         ref={scrollableRef}
         aria-label="List of markers with restaurants"
@@ -97,7 +97,7 @@ function MarkerList() {
             shouldScroll={shouldScroll}
           />
         ))}
-      </CardsContainer>
+      </CardsContainer> */}
     </>
   );
 }

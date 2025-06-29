@@ -357,7 +357,7 @@ export const PageHeader = styled.h2(() => ({
 }));
 
 export const CardHeader = styled.h2(() => ({
-  fontSize: "1.1rem",
+  fontSize: "1rem",
   textAlign: "left",
   paddingRight: "0.1rem",
   gridColumnStart: 1,
@@ -404,11 +404,33 @@ export const CardButton = styled(Button)((props) => ({
   },
 }));
 
-export const ViewCardButton = styled(CardButton)(() => ({
+export const ViewCardButton = styled(CardButton)<{
+  lower: boolean | undefined;
+}>((props) => ({
   gridColumnStart: 1,
-  gridColumnEnd: 1,
+  gridColumnEnd: 4,
+  gridRowStart: props.lower ? 3 : 2,
+  gridRowEnd: props.lower ? 3 : 2,
+  marginBottom: `${props.lower ? "2px" : "10px"}`,
+  marginTop: `${props.lower ? "-5px" : "-12px"}`,
+}));
+
+export const CardDropDownContainer = styled.div(() => ({
+  gridColumnStart: 1,
+  gridColumnEnd: 4,
   gridRowStart: 3,
   gridRowEnd: 3,
+  marginBottom: "5px",
+  marginTop: "-5px"
+}));
+
+export const CardOptionsContainer = styled.div(() => ({
+  display: "none",
+  flexDirection: "column",
+  zIndex: 100,
+  position: "relative",
+  gap: "0.25rem",
+  marginTop: "0.25rem",
 }));
 
 export const TourCardButton = styled(CardButton)(() => ({
@@ -1314,8 +1336,11 @@ export const NavigationSelectButton = styled(NavigationButton)((props) => ({
   color: props.theme.colors.secondary,
 }));
 
-export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
-  backgroundColor: props.theme.colors.tertiary,
+export const NavigationDropDownButton = styled(NavigationButton)<{
+  opened: boolean | undefined;
+}>((props) => ({
+  backgroundColor: props.opened ? props.theme.colors.secondary : props.theme.colors.tertiary,
+  color: props.opened ? props.theme.colors.primary : props.theme.colors.secondary,
   width: "100%",
   display: "flex",
   justifyContent: "center",
@@ -1323,7 +1348,7 @@ export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
   position: "relative",
   ":after": {
     content: `""`,
-    transform: "rotate(-90deg)",
+    transform: props.opened ? "rotate(90deg)" : "rotate(-90deg)",
     position: "absolute",
     right: "0.5rem",
     width: "0.9rem",
@@ -1332,11 +1357,18 @@ export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "contain",
+    filter: props.opened ? "invert(=0)" : "invert(1)",
+  },
+  "&:hover:after": {
+    filter: "invert(0)",
   },
 }));
 
-export const DropDownOptionButton = styled(NavigationButton)(() => ({
+export const DropDownOptionButton = styled(NavigationButton)((props) => ({
+  backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
   width: "100%",
+  padding: "5px 16px"
 }));
 
 export const CenterAllContainer = styled.div(() => ({
