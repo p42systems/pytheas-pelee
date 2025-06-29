@@ -38,7 +38,7 @@ function Content() {
           <a href="#beaches" style={{ color: "#000", fontWeight: "600" }}>
             Beaches
           </a>
-          , and {" "}
+          , and{" "}
           <a href="#attractions" style={{ color: "#000", fontWeight: "600" }}>
             Attractions
           </a>
@@ -47,7 +47,7 @@ function Content() {
             Restaurants
           </a> */}
           . To view the content of any stop, click the{" "}
-          <StaticheaderBackgroundButton>View</StaticheaderBackgroundButton>
+          <StaticheaderBackgroundButton>View Stop</StaticheaderBackgroundButton>{" "}
           button. If you are near the site and would like to begin your Point
           Pelee adventure, click{" "}
           <StaticheaderBackgroundButton style={{ backgroundColor: "#2b2d42" }}>
