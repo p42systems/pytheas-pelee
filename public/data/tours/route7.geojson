@@ -59,7 +59,7 @@
         "longitude": -82.50554394251904,
         "sequence": 505,
         "imageAlt": "East Beach (South)",
-        "extra": true,
+        "extra": false,
         "id": "p59poi",
         "image": "/photos/p59poi.jpg",
         "address": "",

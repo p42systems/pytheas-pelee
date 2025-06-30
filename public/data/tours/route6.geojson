@@ -66,7 +66,7 @@
         "latitude": 41.949087,
         "sequence": 200,
         "imageAlt": "Picnic Site",
-        "extra": true,
+        "extra": false,
         "id": "p20pic",
         "image": "/photos/p20pic.jpg",
         "address": "",
