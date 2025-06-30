@@ -1,8 +1,8 @@
 {
   "header": "How to Take the Tour",
   "body": [
-    "You can start the tour by pressing the {{takeTour}} button. You may choose to only do a portion of the tour and come back at a later time. The tour will remember which markers you have already visited and allow you to begin where you left off.",
-    "The first stop on the tour is at **first marker location**. From there the map will prompt you to the next stop with an orange marker. You may choose to visit any marker at any time. Completed stops are noted with green pins and remaining stops are noted with blue pins. To mark content as completed, press the {{completed}} check box on the content page.",
+    "You can start the tour by pressing the {{selectRoute}} button. We have curated a variety of routes offering the best of Point Pelee and Leamington. You may choose to only do a portion of a tour and come back at a later time. The tour will remember which markers you have already visited and allow you to begin where you left off.",
+    "The first stops on the different routes vary, but once you begin the map will prompt you to the next stop with an orange marker. You may choose to visit any marker at any time. Completed stops are noted with green pins and remaining stops are noted with blue pins. To mark content as completed, press the {{completed}} check box on the content page.",
     "Not able to be there in person? All materials are available at any time, simply click the {{content}} button to watch at your own pace."
   ],
   "links": null

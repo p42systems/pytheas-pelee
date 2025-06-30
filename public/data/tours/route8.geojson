@@ -1,0 +1,144 @@
+{
+  "type": "FeatureCollection",
+  "name": "converted_tour",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.9316,
+        "longitude": -82.513,
+        "sequence": 500,
+        "imageAlt": "Visitor Centre",
+        "extra": false,
+        "id": "p50poi",
+        "image": "/photos/p50poi.jpg",
+        "address": "",
+        "name": "Point Pelee National Park Visitor Centre",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.51304675316592,
+          41.9316318129286
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.931614343393335,
+        "longitude": -82.51369893689923,
+        "sequence": 501,
+        "imageAlt": "Tip Shuttle Stop",
+        "extra": false,
+        "id": "p62poi",
+        "image": "/photos/p62poi.jpg",
+        "address": "",
+        "name": "Tip Trolley Terminus",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.51369893689923,
+          41.931614343393335
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.914153272117375,
+        "longitude": -82.50946532492881,
+        "sequence": 521,
+        "imageAlt": "Tip Shuttle Stop",
+        "extra": false,
+        "id": "p63poi",
+        "image": "/photos/p63poi.jpg",
+        "address": "",
+        "name": "Tip Trolley Stop",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.50946532492881,
+          41.914153272117375
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.91392426678664,
+        "longitude": -82.51006622788641,
+        "sequence": 510,
+        "imageAlt": "Tip Tower",
+        "extra": false,
+        "id": "p51poi",
+        "image": "/photos/p51poi.jpg",
+        "address": "",
+        "name": "Point Pelee Tip Tower",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.51006622788641,
+          41.91392426678664
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.91364350959503,
+        "longitude": -82.50931114676828,
+        "sequence": 530,
+        "imageAlt": "42 Sign",
+        "extra": false,
+        "id": "p53poi",
+        "image": "/photos/p53poi.jpg",
+        "address": "",
+        "name": "42 Sign",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.50931114676828,
+          41.91364350959503
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.908862033615236,
+        "longitude": -82.50938012697509,
+        "sequence": 550,
+        "imageAlt": "Point Pelee",
+        "extra": false,
+        "id": "p55poi",
+        "image": "/photos/p55poi.jpg",
+        "address": "",
+        "name": "Point Pelee",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.50938012697509,
+          41.908862033615236
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

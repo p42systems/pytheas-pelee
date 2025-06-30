@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "name": "converted_tour",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.537441,
+          41.974007
+        ]
+      },
+      "properties": {
+        "longitude": -82.537441,
+        "latitude": 41.974007,
+        "sequence": 120,
+        "imageAlt": "Sanctuary",
+        "extra": true,
+        "id": "p12att",
+        "image": "/photos/p12att.jpg",
+        "address": "",
+        "name": "Sanctuary",
+        "type": "picnic"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.96736409356657,
+        "longitude": -82.53434611228644,
+        "sequence": 165,
+        "imageAlt": "Northwest Beach",
+        "extra": true,
+        "id": "p56poi",
+        "image": "/photos/p56poi.jpg",
+        "address": "",
+        "name": "Northwest Beach",
+        "type": "beach"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.53434611228644,
+          41.96736409356657
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.52605,
+          41.955843
+        ]
+      },
+      "properties": {
+        "longitude": -82.52605,
+        "latitude": 41.955843,
+        "sequence": 170,
+        "imageAlt": "Dunes",
+        "extra": true,
+        "id": "p17pic",
+        "image": "/photos/p17pic.jpg",
+        "address": "Point Pelee Drive 1513",
+        "name": "Dunes",
+        "type": "picnic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.52413,
+          41.953666
+        ]
+      },
+      "properties": {
+        "longitude": -82.52413,
+        "latitude": 41.953666,
+        "sequence": 180,
+        "imageAlt": "Sleepy Hollow",
+        "extra": true,
+        "id": "p18pic",
+        "image": "/photos/p18pic.jpg",
+        "address": "Point Pelee Drive 1533",
+        "name": "Sleepy Hollow",
+        "type": "picnic"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.94617327346995,
+        "longitude": -82.522400538034,
+        "sequence": 195,
+        "imageAlt": "Black Willow Beach",
+        "extra": true,
+        "id": "p58poi",
+        "image": "/photos/p58poi.jpg",
+        "address": "",
+        "name": "Black Willow Beach",
+        "type": "beach"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.522400538034,
+          41.94617327346995
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.93140412467292,
+        "longitude": -82.51595247085693,
+        "sequence": 507,
+        "imageAlt": "West Beach (South)",
+        "extra": true,
+        "id": "p60poi",
+        "image": "/photos/p60poi.jpg",
+        "address": "",
+        "name": "West Beach (South)",
+        "type": "beach"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.51595247085693,
+          41.93140412467292
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.908862033615236,
+        "longitude": -82.50938012697509,
+        "sequence": 550,
+        "imageAlt": "Point Pelee",
+        "extra": false,
+        "id": "p55poi",
+        "image": "/photos/p55poi.jpg",
+        "address": "",
+        "name": "Point Pelee",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.50938012697509,
+          41.908862033615236
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

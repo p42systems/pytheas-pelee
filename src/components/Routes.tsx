@@ -5,6 +5,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import Introduction from "./Introduction/Introduction";
 import Content from "./Content/Content";
 import Home from "./Home/Home";
+import Select from "./Select/Select";
 import Tour from "./Tour/Tour";
 import Loading from "./General/Loading";
 import GenericError from "./General/GenericError";
@@ -26,6 +27,13 @@ function Routes() {
         <ErrorBoundary FallbackComponent={GenericError}>
           <Suspense fallback={<Loading />}>
             <Home />
+          </Suspense>
+        </ErrorBoundary>
+      </Route>
+      <Route path="/select">
+        <ErrorBoundary FallbackComponent={GenericError}>
+          <Suspense fallback={<Loading />}>
+            <Select />
           </Suspense>
         </ErrorBoundary>
       </Route>

@@ -1,6 +1,7 @@
 import { useLocation } from "wouter";
 
 import {
+  PageHeader,
   ListParagraph,
   StaticheaderBackgroundButton,
   BackButton,
@@ -26,13 +27,44 @@ function Content() {
         </BackButton>
       </Header>
       <ListMainContainer>
+        <PageHeader>Content</PageHeader>
         <ListParagraph>
-          Welcome to the content page. To view the content, click the{" "}
-          <StaticheaderBackgroundButton>View</StaticheaderBackgroundButton>
-          button. If you are near the site and would like to participate in the
-          walking tour, click the{" "}
-          <StaticheaderBackgroundButton>Take Tour</StaticheaderBackgroundButton>
-          button and it will instruct you as to where to start.
+          Welcome to the content page. For your convenience, the stops have been
+          divided into{" "}
+          <a href="#picnics" style={{ color: "#000", fontWeight: "600" }}>
+            Picnic Sites
+          </a>
+          ,{" "}
+          <a href="#beaches" style={{ color: "#000", fontWeight: "600" }}>
+            Beaches
+          </a>
+          , and{" "}
+          <a href="#attractions" style={{ color: "#000", fontWeight: "600" }}>
+            Attractions
+          </a>
+          {/* , and{" "}
+          <a href="#restaurants" style={{ color: "#000", fontWeight: "600" }}>
+            Restaurants
+          </a> */}
+          . To view the content of any stop, click the{" "}
+          <StaticheaderBackgroundButton>View Stop</StaticheaderBackgroundButton>{" "}
+          button. You can also browse the{" "}
+          <a
+            onClick={() => setLocation("/select")}
+            style={{
+              color: "#000",
+              fontWeight: "600",
+              textDecoration: "underline",
+            }}
+          >
+            Route Selection
+          </a>{" "}
+          page to find a route that suits your interests. If you are near the
+          site and would like to begin your Point Pelee adventure, click{" "}
+          <StaticheaderBackgroundButton style={{ backgroundColor: "#2b2d42" }}>
+            Select Route
+          </StaticheaderBackgroundButton>{" "}
+          to find your route and begin.
         </ListParagraph>
         <MarkerList />
       </ListMainContainer>

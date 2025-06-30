@@ -36,6 +36,12 @@ function BodyParagraphs(props: {
                   Take Tour
                 </StatictourButtonButton>
               );
+            } else if (content === "selectRoute") {
+              return (
+                <StatictourButtonButton key={index}>
+                  Select Route
+                </StatictourButtonButton>
+              );
             } else if (content === "completed") {
               return (
                 <StaticheaderBackgroundButton key={index}>

@@ -17,6 +17,7 @@ export type IMarker = {
   sequence: number;
   image: string;
   imageAlt: string;
+  type?: string;
 };
 
 export type MarkerContext = {
@@ -163,6 +164,11 @@ export interface MarkerListItemProps {
   marker: IMarker;
   selected: boolean;
   shouldScroll: (top: number, bottom: number) => boolean;
+}
+
+export interface SelectCardItemProps {
+  marker: IMarker;
+  sequence: string;
 }
 
 export interface IMapIcons {

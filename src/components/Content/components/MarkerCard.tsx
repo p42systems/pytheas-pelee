@@ -2,7 +2,7 @@ import useMeasure from "react-use-measure";
 import { ResizeObserver } from "@juggle/resize-observer";
 import { mergeRefs } from "react-merge-refs";
 import { useLayoutEffect, useRef } from "react";
-import { useSetAtom, useAtomValue } from "jotai";
+import { useSetAtom, useAtomValue, useAtom } from "jotai";
 import { useLocation } from "wouter";
 
 import {
@@ -10,16 +10,23 @@ import {
   CardImage,
   CardContent,
   CardHeader,
-  CardAddress,
   ViewCardButton,
-  TourCardButton,
+  CardDropDownContainer,
+  NavigationDropDownButton,
+  CardOptionsContainer,
+  DropDownOptionButton,
   CardState,
 } from "../../styled_components";
 import {
-  updateSelectedMarkerAtom,
   setDetailsMarkerIdAtom,
   getAllMarkerProgressAtom,
+  isDropDownAtom,
+  getDropDownAtom,
+  tourPreferenceAtom,
+  routesQueryAtom,
 } from "../../../atoms";
+
+import { loadTour } from "../../../services/navigation";
 
 import { MarkerListItemProps } from "../../../types";
 
@@ -28,13 +35,23 @@ import placeholder from "/stop_placeholder.png";
 function MarkerCard({ marker, selected, shouldScroll }: MarkerListItemProps) {
   const [, setLocation] = useLocation();
   const setDetailsMarkerId = useSetAtom(setDetailsMarkerIdAtom);
-  const updateSelectedMarker = useSetAtom(updateSelectedMarkerAtom);
   const [markerMeasureRef, markerBounds] = useMeasure({
     scroll: true,
     polyfill: ResizeObserver,
   });
+  const routesAtomValue = useAtomValue(routesQueryAtom);
+  const { routes } = routesAtomValue;
   const markerRef = useRef<HTMLLIElement>(null);
   const markerProgressStates = useAtomValue(getAllMarkerProgressAtom);
+  const [isDropDown, setIsDropDown] = useAtom(isDropDownAtom);
+  const setTourPreference = useSetAtom(tourPreferenceAtom);
+
+  // Find all routes that include this marker as a stop
+  const markerRoutes = routes
+    ? routes
+        .filter((route) => route.stops.some((stop) => stop.id === marker.id))
+        .map((route) => ({ id: route.id, name: route.name }))
+    : [];
 
   useLayoutEffect(() => {
     // Goals: If the marker isn't in view, scroll it into view but only if it's selected
@@ -87,9 +104,8 @@ function MarkerCard({ marker, selected, shouldScroll }: MarkerListItemProps) {
       />
       <CardContent>
         <CardHeader>{marker.name}</CardHeader>
-        {marker.address ? <CardAddress>{marker.address}</CardAddress> : <></>}
-
         <ViewCardButton
+          lower={markerRoutes.length > 0 ? false : true}
           aria-label={`View ${marker.name} content page`}
           title={`View ${marker.name} content page`}
           tabIndex={0}
@@ -98,19 +114,53 @@ function MarkerCard({ marker, selected, shouldScroll }: MarkerListItemProps) {
             setLocation(`/tour/details/${marker.id}`);
           }}
         >
-          View
+          View Stop
         </ViewCardButton>
-        <TourCardButton
-          aria-label={`View ${marker.name} in the tour`}
-          title={`View ${marker.name} in the tour`}
-          tabIndex={0}
-          onClick={() => {
-            updateSelectedMarker(marker.id);
-            setLocation("/tour");
-          }}
-        >
-          Take Tour
-        </TourCardButton>
+
+        {markerRoutes.length > 0 ? (
+          <>
+            <CardDropDownContainer
+              onClick={() => {
+                setIsDropDown((prev) => {
+                  const newState = Object.keys(prev).reduce((acc, key) => {
+                    acc[key] = false;
+                    return acc;
+                  }, {} as typeof prev);
+                  return {
+                    ...newState,
+                    [marker.id]: !prev[marker.id],
+                  };
+                });
+              }}
+            >
+              <NavigationDropDownButton
+                opened={!!isDropDown[marker.id]}
+                title="Select Route"
+                aria-label="Select Route"
+              >
+                Select Route
+              </NavigationDropDownButton>
+              <CardOptionsContainer
+                style={{ display: useAtomValue(getDropDownAtom)(marker.id) }}
+              >
+                {markerRoutes.map((route) => (
+                  <DropDownOptionButton
+                    key={route.id}
+                    title={route.name}
+                    aria-label={route.name}
+                    onClick={() => {
+                      loadTour(route.id, setTourPreference, setLocation);
+                    }}
+                  >
+                    {route.name}
+                  </DropDownOptionButton>
+                ))}
+              </CardOptionsContainer>
+            </CardDropDownContainer>
+          </>
+        ) : (
+          <></>
+        )}
       </CardContent>
     </CardContainer>
   );

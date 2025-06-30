@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "name": "converted_tour",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.492361,
+          42.079089
+        ]
+      },
+      "properties": {
+        "longitude": -82.492361,
+        "latitude": 42.079089,
+        "sequence": 10,
+        "imageAlt": "Kopegaron Woods",
+        "extra": false,
+        "id": "p1att",
+        "image": "/photos/p1att.jpg",
+        "address": "",
+        "name": "Kopegaron Woods Conservation Area",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5136,
+          42.0432
+
+        ]
+      },
+      "properties": {
+        "longitude": "-82.5136",
+        "latitude": "42.0432",
+        "sequence": "90.0",
+        "imageAlt": "Hillman Marsh",
+        "extra": false,
+        "id": "p10pic",
+        "image": "/photos/p10pic.jpg",
+        "address": "",
+        "name": "Hillman Marsh Conservation Area",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.590093,
+          42.043801
+        ]
+      },
+      "properties": {
+        "longitude": -82.590093,
+        "latitude": 42.043801,
+        "sequence": 40,
+        "imageAlt": "Essex Kent Mennonite Historical Society",
+        "extra": false,
+        "id": "p4mus",
+        "image": "/photos/p4mus.jpg",
+        "address": "",
+        "name": "Essex Kent Mennonite Historical Society",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.5685,
+          42.0084
+        ]
+      },
+      "properties": {
+        "longitude": -82.5685,
+        "latitude": 42.0084,
+        "sequence": 80,
+        "imageAlt": "Mersea Park",
+        "extra": false,
+        "id": "p9park",
+        "image": "/photos/p9park.jpg",  
+        "address": "Robson Rd 101",
+        "name": "Mersea Park",
+        "type": "attraction"
+      }
+    }
+  ]
+}

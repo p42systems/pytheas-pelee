@@ -10,13 +10,10 @@ import { viewControllerMachine } from "./machines/viewController";
 import { IMarker, TourStates, MarkerProgress, IMapIcons } from "./types";
 import { FeatureCollection } from "geojson";
 import { fetchRoute } from "./services/route";
+import { fetchRoutes } from "./services/routes";
 import { fetchMarkerDetails, fetchMarkers } from "./services/markers";
 import { fetchBoundingBox } from "./services/boundingBoxServices";
-import {
-  tourInstructions,
-  sponsors,
-  about,
-} from "./services/copy";
+import { tourInstructions, sponsors, about } from "./services/copy";
 
 /*********************************
  * URL matcher
@@ -284,6 +281,20 @@ export const refetchDirectionQueryAtom = atom(null, (_get, set) =>
 export const loadableDirectionQueryAtom = loadable(directionQueryAtom);
 
 /*********************************
+ * Routes Query
+ *********************************/
+
+export const routesQueryAtom = atomWithQuery<
+  ReturnType<typeof fetchRoutes>,
+  unknown
+>(() => ({
+  queryKey: ["routes"],
+  queryFn: async () => {
+    return fetchRoutes();
+  },
+}));
+
+/*********************************
  * Markers Query
  *********************************/
 
@@ -295,6 +306,30 @@ export const markersQueryAtom = atomWithQuery<
   queryFn: async () => {
     const tourPreference = get(tourPreferenceAtom);
     return fetchMarkers(tourPreference);
+  },
+}));
+
+export const allMarkersQueryAtom = atomWithQuery<
+  ReturnType<typeof fetchMarkers>,
+  unknown
+>((get) => ({
+  queryKey: ["markers"],
+  queryFn: async () => {
+    const fullTour = get(fullTourAtom);
+    return fetchMarkers(fullTour);
+  },
+}));
+
+export const filteredMarkersQueryAtom = atomWithQuery<
+  ReturnType<typeof fetchMarkers>,
+  unknown
+>((get) => ({
+  queryKey: ["markers"],
+  queryFn: async () => {
+    const tourPreference = get(tourPreferenceAtom);
+    let markers = await fetchMarkers(tourPreference);
+    // const featureFilters = get(featureFiltersAtom);
+    return markers;
   },
 }));
 
@@ -336,7 +371,7 @@ export const boundingBoxQueryAtom = atomWithQuery<
   ReturnType<typeof fetchBoundingBox>,
   unknown
 >((get) => {
-  const tourPreference = get(tourPreferenceAtom);
+  const tourPreference = get(fullTourAtom);
 
   let preferredQuery = {
     queryKey: [`${tourPreference}_bounding_box`],
@@ -356,13 +391,22 @@ export const paddedBoundingBoxAtom = atom<LatLngBounds>((get) => {
  * Home Page & Tour Type Navigation Atoms
  *********************************/
 
-export const isDropDownAtom: PrimitiveAtom<boolean> = atom(false);
+export const isDropDownAtom: PrimitiveAtom<Record<string, boolean>> = atom({});
 
 export const getDropDownAtom = atom((get) => {
-  return get(isDropDownAtom) === true ? "flex" : "none";
+  const dropDownState = get(isDropDownAtom);
+  return (key: string) => (dropDownState[key] ? "flex" : "none");
 });
 
+export const fullTourAtom: PrimitiveAtom<string> = atom("full");
+
 export const tourPreferenceAtom: PrimitiveAtom<string> = atom("full");
+
+export const featureFiltersAtom = atom({
+  picnic: false,
+  beach: false,
+  attraction: true,
+});
 
 /*********************************
  * Copy Query / Atoms

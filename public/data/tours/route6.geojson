@@ -1,0 +1,100 @@
+{
+  "type": "FeatureCollection",
+  "name": "converted_tour",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.519946,
+          41.948177
+        ]
+      },
+      "properties": {
+        "longitude": -82.519946,
+        "latitude": 41.948177,
+        "sequence": 190,
+        "imageAlt": "DeLaurier Homestead",
+        "extra": false,
+        "id": "p19att",
+        "image": "/photos/p19att.jpg",
+        "address": "",
+        "name": "DeLaurier Homestead",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.517533,
+          41.951419
+        ]
+      },
+      "properties": {
+        "longitude": -82.517533,
+        "latitude": 41.951419,
+        "sequence": 220,
+        "imageAlt": "Boardwalk Viewpoint",
+        "extra": false,
+        "id": "p22vie",
+        "image": "/photos/p22vie.jpg",
+        "address": "",
+        "name": "Boardwalk Viewpoint",
+        "type": "attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.51865,
+          41.949087
+        ]
+      },
+      "properties": {
+        "longitude": -82.51865,
+        "latitude": 41.949087,
+        "sequence": 200,
+        "imageAlt": "Picnic Site",
+        "extra": true,
+        "id": "p20pic",
+        "image": "/photos/p20pic.jpg",
+        "address": "",
+        "name": "Picnic Site",
+        "type": "picnic"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "latitude": 41.94281569469527,
+        "longitude": -82.51633407009638,
+        "sequence": 195,
+        "imageAlt": "Point Pelee Cemetery",
+        "extra": false,
+        "id": "p61poi",
+        "image": "/photos/p61poi.jpg",
+        "address": "",
+        "name": "Point Pelee Cemetery",
+        "type": "attraction"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.51633407009638,
+          41.94281569469527
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

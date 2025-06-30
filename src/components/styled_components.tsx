@@ -54,11 +54,9 @@ export const ListMainContainer = styled.main(() => ({
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: "100%",
-  "@media screen and (min-width: 1028px)": {
-    width: "1028px",
-  },
-  "@media screen and (max-width: 800px)": {
-    width: "100vw",
+  maxWidth: "1080px",
+  "@media screen and (max-width: 1200px)": {
+    width: "95vw",
   },
   minWidth: "375px",
 }));
@@ -88,6 +86,21 @@ export const GeneralLink = styled(Link)((props) => ({
     opacity: 0.5,
   },
   "&:visited": {},
+}));
+
+export const SelectionsContainer = styled.article((props) => ({
+  display: "flex",
+  flexFlow: "row wrap",
+  alignItems: "stretch",
+  justifyContent: "center",
+  minHeight: "250px",
+  maxWidth: "90%",
+  border: `2px solid ${props.theme.colors.primary}`,
+  borderRadius: "5px",
+  margin: "0.5rem auto",
+  marginBottom: "3rem",
+  padding: "1rem",
+  backgroundColor: props.theme.colors.tertiary + `44`,
 }));
 
 export const Button = styled.button((props) => ({
@@ -153,9 +166,10 @@ export const CardsContainer = styled.div(() => ({
   alignItems: "center",
   justifyContent: "center",
   margin: 0,
+  marginBottom: "1.5rem",
   padding: 0,
   flexGrow: 1,
-  flexShrink: 1,
+  flexShrink: 1
 }));
 
 export const ListParagraph = styled.p(() => ({
@@ -178,6 +192,107 @@ export const CardContainer = styled.article((props) => ({
   gridTemplateRows: "1fr",
   position: "relative",
   backgroundColor: props.theme.colors.quaternary,
+}));
+
+export const SelectCardContainer = styled.article((props) => ({
+  display: "grid",
+  minHeight: "150px",
+  width: "250px",
+  border: `2px solid ${props.theme.colors.primary}`,
+  borderRadius: "5px",
+  margin: "0.5rem",
+  gap: "0.5rem 0.5rem",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gridTemplateRows: "1fr",
+  position: "relative",
+  backgroundColor: props.theme.colors.quaternary,
+}));
+
+export const SelectRouteCardContainer = styled.article((props) => ({
+  border: `2px solid ${props.theme.colors.primary}`,
+  width: "250px",
+  padding: "1rem",
+  borderRadius: "5px",
+  backgroundColor: "#CE8751",
+  margin: "0.5rem",
+  display: "flex",
+  flexDirection: "column",
+  minHeight: "100%",
+  justifyContent: "flex-start",
+  alignItems: "stretch",
+  "@media screen and (max-width: 970px)": {
+    width: "95%",
+  },
+}));
+
+export const RouteList = styled.ul(() => ({
+  display: "flex",
+  flexDirection: "column",
+  paddingLeft: "0",
+  margin: "0.5rem 0",
+  listStyle: "none",
+  position: "relative",
+  gap: "1.5rem",
+}));
+
+export const RouteListItem = styled.li(() => ({
+  display: "flex",
+  alignItems: "center",
+  position: "relative",
+}));
+
+export const RouteListLink = styled.a((props) => ({
+  color: props.theme.colors.octonary,
+  fontWeight: "600",
+  textDecoration: "none",
+  "&:hover, &:active": {
+    textDecoration: "underline",
+    color: props.theme.colors.primary,
+  },
+}));
+
+export const RouteLine = styled.span(() => ({
+  position: "absolute",
+  left: "5px",
+  top: "0.8em",
+  bottom: "0.8em",
+  width: "2px",
+  background: "#24422A",
+  zIndex: 0,
+}));
+
+export const RouteBullet = styled.span(() => ({
+  display: "inline-block",
+  minWidth: "12px",
+  minHeight: "12px",
+  borderRadius: "50%",
+  background: "#24422A",
+  marginRight: "8px",
+  position: "relative",
+  zIndex: 2,
+}));
+
+export const RouteFeatures = styled.p((props) => ({
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+  backgroundColor: props.theme.colors.tertiary,
+  border: `2px solid ${props.theme.colors.senary}`,
+  color: props.theme.colors.senary,
+  borderRadius: "5px",
+  margin: "0",
+  marginTop: "1rem",
+  padding: "0.4rem",
+  fontWeight: "900",
+  fontSize: "0.9rem",
+}));
+
+export const RouteImage = styled.img(() => ({
+  height: "175px",
+  width: "calc(100% + 32px)",
+  marginLeft: "-16px",
+  marginTop: "-16px",
+  objectFit: "cover",
 }));
 
 export const CardState = styled.div(() => ({
@@ -212,14 +327,37 @@ export const CardContent = styled.div(() => ({
   paddingRight: "0.1rem",
 }));
 
+export const SelectCardContent = styled.div(() => ({
+  gridColumnStart: 1,
+  gridColumnEnd: 4,
+  gridRowStart: 1,
+  gridRowEnd: 1,
+  display: "grid",
+  gridTemplateColumns: "40% 0.5em 55%",
+  gridTemplateRows: "60% 20% 20%",
+  gap: "0px 0px",
+  width: "217px",
+  height: "120px",
+  paddingLeft: "1rem",
+  paddingRight: "1rem"
+}));
+
 export const CardButtons = styled.div(() => ({
   display: "flex",
   justifyContent: "space-evenly",
   padding: "1rem",
 }));
 
+export const PageHeader = styled.h2(() => ({
+  textAlign: "left",
+  margin: "0.5rem 0",
+  "@media screen and (max-width: 600px)": {
+    textAlign: "center",
+  },
+}));
+
 export const CardHeader = styled.h2(() => ({
-  fontSize: "1.1rem",
+  fontSize: "1rem",
   textAlign: "left",
   paddingRight: "0.1rem",
   gridColumnStart: 1,
@@ -266,11 +404,33 @@ export const CardButton = styled(Button)((props) => ({
   },
 }));
 
-export const ViewCardButton = styled(CardButton)(() => ({
+export const ViewCardButton = styled(CardButton)<{
+  lower: boolean | undefined;
+}>((props) => ({
   gridColumnStart: 1,
-  gridColumnEnd: 1,
+  gridColumnEnd: 4,
+  gridRowStart: props.lower ? 3 : 2,
+  gridRowEnd: props.lower ? 3 : 2,
+  marginBottom: `${props.lower ? "2px" : "10px"}`,
+  marginTop: `${props.lower ? "-5px" : "-12px"}`,
+}));
+
+export const CardDropDownContainer = styled.div(() => ({
+  gridColumnStart: 1,
+  gridColumnEnd: 4,
   gridRowStart: 3,
   gridRowEnd: 3,
+  marginBottom: "5px",
+  marginTop: "-5px"
+}));
+
+export const CardOptionsContainer = styled.div(() => ({
+  display: "none",
+  flexDirection: "column",
+  zIndex: 100,
+  position: "relative",
+  gap: "0.25rem",
+  marginTop: "0.25rem",
 }));
 
 export const TourCardButton = styled(CardButton)(() => ({
@@ -278,6 +438,15 @@ export const TourCardButton = styled(CardButton)(() => ({
   gridColumnEnd: 3,
   gridRowStart: 3,
   gridRowEnd: 3,
+}));
+
+export const TourSelectButton = styled(CardButton)(() => ({
+  gridColumnStart: 1,
+  gridColumnEnd: 6,
+  gridRowStart: 3,
+  gridRowEnd: 4,
+  marginTop: "0.5rem",
+  height: "2rem",
 }));
 
 export const AboutParagraph = styled.p((props) => ({
@@ -319,6 +488,16 @@ export const AboutAnchorHeader = styled.h2((props) => ({
 }));
 
 export const HomeSubHeader = styled.h2((props) => ({
+  padding: "0 0 0 1rem",
+  margin: "2rem 0 0.25rem 0",
+  fontSize: "1.25rem",
+  color: props.theme.colors.primary,
+  "@media screen and (max-width: 600px)": {
+    textAlign: "center",
+  },
+}));
+
+export const ContentSubHeader = styled.h3((props) => ({
   padding: "0 0 0 1rem",
   margin: "2rem 0 0.25rem 0",
   fontSize: "1.25rem",
@@ -836,7 +1015,7 @@ export const FooterSubBar = styled.div((props) => ({
   verticalAlign: "middle",
   width: "100%",
   position: "relative",
-  backgroundColor: props.theme.colors.primary,
+  backgroundColor: props.theme.colors.tertiary,
   color: props.theme.colors.secondary,
 }));
 
@@ -935,7 +1114,7 @@ export const HeaderSubBar = styled.div((props) => ({
   verticalAlign: "middle",
   width: "100%",
   position: "relative",
-  backgroundColor: props.theme.colors.primary,
+  backgroundColor: props.theme.colors.tertiary,
   color: props.theme.colors.secondary,
 }));
 
@@ -1152,8 +1331,16 @@ export const NavigationTourButton = styled(NavigationButton)((props) => ({
   color: props.theme.colors.secondary,
 }));
 
-export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
+export const NavigationSelectButton = styled(NavigationButton)((props) => ({
   backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
+}));
+
+export const NavigationDropDownButton = styled(NavigationButton)<{
+  opened: boolean | undefined;
+}>((props) => ({
+  backgroundColor: props.opened ? props.theme.colors.secondary : props.theme.colors.tertiary,
+  color: props.opened ? props.theme.colors.primary : props.theme.colors.secondary,
   width: "100%",
   display: "flex",
   justifyContent: "center",
@@ -1161,7 +1348,7 @@ export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
   position: "relative",
   ":after": {
     content: `""`,
-    transform: "rotate(-90deg)",
+    transform: props.opened ? "rotate(90deg)" : "rotate(-90deg)",
     position: "absolute",
     right: "0.5rem",
     width: "0.9rem",
@@ -1170,11 +1357,18 @@ export const NavigationDropDownButton = styled(NavigationButton)((props) => ({
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "contain",
+    filter: props.opened ? "invert(=0)" : "invert(1)",
+  },
+  "&:hover:after": {
+    filter: "invert(0)",
   },
 }));
 
-export const DropDownOptionButton = styled(NavigationButton)(() => ({
+export const DropDownOptionButton = styled(NavigationButton)((props) => ({
+  backgroundColor: props.theme.colors.tertiary,
+  color: props.theme.colors.secondary,
   width: "100%",
+  padding: "5px 16px"
 }));
 
 export const CenterAllContainer = styled.div(() => ({
@@ -1416,6 +1610,14 @@ export const CheckboxLabel = styled.label(() => ({
   cursor: "pointer",
 }));
 
+export const SelectCheckboxLabel = styled.label(() => ({
+  display: "inline-block",
+  margin: "0.15rem 0",
+  fontSize: "1rem",
+  position: "relative",
+  cursor: "pointer",
+}));
+
 export const CheckboxLabelText = styled.span(() => ({
   verticalAlign: "middle",
 }));
@@ -1443,6 +1645,27 @@ export const Checkbox = styled.input((props) => ({
     top: "4px",
     left: "1px",
   },
+}));
+
+export const SelectCheckbox = styled.input((props) => ({
+  appearance: "none",
+  width: "15px",
+  height: "15px",
+  backgroundColor: '#fff',
+  border: `2px solid ${props.theme.colors.tertiary}`,
+  transition: "all 500ms",
+  position: "relative",
+  borderRadius: "5px",
+  marginRight: "0.5rem",
+  cursor: "pointer",
+  verticalAlign: "middle",
+  bottom: "1px",
+  "&:hover, &:checked": {
+    maxWidth: "15px",
+    maxHeight: "15px",
+    backgroundColor: props.theme.colors.tertiary,
+    content: `url("/icons/checkmark_beige.svg")`,
+  }
 }));
 
 const loadingAnimation = keyframes`
