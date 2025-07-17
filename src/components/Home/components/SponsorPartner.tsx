@@ -25,6 +25,11 @@ function SponsorPartner() {
           src="/logos/hackforge_logo.png"
           alt="Hackforge"
         />
+        <SponsorPartnerImg
+          large={false}
+          src="/logos/leamington_logo.png"
+          alt="Municipality of Leamington"
+        />
       </SponsorPartnerContainer>
     </>
   );
